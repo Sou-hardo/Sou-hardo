@@ -1,0 +1,201 @@
+{
+  "nodes": [
+    {
+      "id": "query:create github profile readme sou hardo account",
+      "type": "query",
+      "meta": {
+        "text": "Create GitHub profile README for Sou-hardo/Sou-hardo account"
+      }
+    },
+    {
+      "id": "CODEX.md",
+      "type": "file"
+    },
+    {
+      "id": ".dual-graph-context/PROJECT_CONTEXT.md",
+      "type": "file"
+    },
+    {
+      "id": ".dual-graph-context/SESSION_CONTEXT.md",
+      "type": "file"
+    },
+    {
+      "id": ".dual-graph-context/packs/README.md",
+      "type": "file"
+    },
+    {
+      "id": "query:(empty)",
+      "type": "query",
+      "meta": {
+        "text": ""
+      }
+    },
+    {
+      "id": "action:edit:1780125309",
+      "type": "action",
+      "meta": {
+        "summary": "Added GitHub profile README with verified profile metadata, featured repos, badges, stats, and contact links."
+      }
+    },
+    {
+      "id": "README.md",
+      "type": "file"
+    },
+    {
+      "id": "action:edit:1780125405",
+      "type": "action",
+      "meta": {
+        "summary": "Added Google Scholar research profile badge and contact link."
+      }
+    },
+    {
+      "id": "action:edit:1780125596",
+      "type": "action",
+      "meta": {
+        "summary": "Reworked profile README into research-first founder profile using Arch\u00e9 publication and lab stats."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "query:create github profile readme sou hardo account",
+      "to": "CODEX.md",
+      "rel": "retrieved",
+      "ts": 1780125259
+    },
+    {
+      "from": "query:create github profile readme sou hardo account",
+      "to": ".dual-graph-context/PROJECT_CONTEXT.md",
+      "rel": "retrieved",
+      "ts": 1780125259
+    },
+    {
+      "from": "query:create github profile readme sou hardo account",
+      "to": ".dual-graph-context/SESSION_CONTEXT.md",
+      "rel": "retrieved",
+      "ts": 1780125259
+    },
+    {
+      "from": "query:create github profile readme sou hardo account",
+      "to": ".dual-graph-context/packs/README.md",
+      "rel": "retrieved",
+      "ts": 1780125259
+    },
+    {
+      "from": "query:(empty)",
+      "to": ".dual-graph-context/PROJECT_CONTEXT.md",
+      "rel": "read",
+      "ts": 1780125264,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": ".dual-graph-context/SESSION_CONTEXT.md",
+      "rel": "read",
+      "ts": 1780125264,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "action:edit:1780125309",
+      "to": "README.md",
+      "rel": "edited",
+      "ts": 1780125309
+    },
+    {
+      "from": "action:edit:1780125405",
+      "to": "README.md",
+      "rel": "edited",
+      "ts": 1780125405
+    },
+    {
+      "from": "action:edit:1780125596",
+      "to": "README.md",
+      "rel": "edited",
+      "ts": 1780125596
+    }
+  ],
+  "files": {
+    ".dual-graph-context/PROJECT_CONTEXT.md": {
+      "query_terms": [],
+      "cached_content": "# PROJECT_CONTEXT\n\n## Product Goal\n- What are we building and for whom?\n\n## Architecture Snapshot\n- Main services/apps:\n- Key data flow:\n- Critical dependencies:\n\n## Non-Negotiable Constraints\n- Security / compliance:\n- Performance targets:\n- Tech constraints:\n\n## Definition Of Done\n- Release criter",
+      "cached_chars": 380,
+      "cached_tokens_est": 95,
+      "last_action": "read",
+      "last_ts": 1780125264
+    },
+    ".dual-graph-context/SESSION_CONTEXT.md": {
+      "query_terms": [],
+      "cached_content": "# SESSION_CONTEXT\n\n## Current Objective\n- What outcome should this session produce?\n\n## Active Scope\n- In-scope modules/files:\n- Out-of-scope modules/files:\n\n## Acceptance Criteria\n- Concrete checks this task must pass:\n\n## Decisions / Assumptions\n- Decision:\n- Why:\n\n## Open Questions\n- Missing deta",
+      "cached_chars": 331,
+      "cached_tokens_est": 82,
+      "last_action": "read",
+      "last_ts": 1780125264
+    },
+    "README.md": {
+      "last_action": "edited",
+      "last_ts": "2026-05-30T07:19:56.864936+00:00",
+      "edited_count": 3
+    }
+  },
+  "actions": [
+    {
+      "ts": 1780125259,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "Create GitHub profile README for Sou-hardo/Sou-hardo account"
+      }
+    },
+    {
+      "ts": 1780125309,
+      "kind": "register_edit",
+      "payload": {
+        "kind": "register_edit"
+      }
+    },
+    {
+      "ts": 1780125405,
+      "kind": "register_edit",
+      "payload": {
+        "kind": "register_edit"
+      }
+    },
+    {
+      "ts": 1780125596,
+      "kind": "register_edit",
+      "payload": {
+        "kind": "register_edit"
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "ts": 1780125309,
+      "summary": "Added GitHub profile README with verified profile metadata, featured repos, badges, stats, and contact links.",
+      "files": [
+        "README.md"
+      ],
+      "scope": "file"
+    },
+    {
+      "ts": 1780125405,
+      "summary": "Added Google Scholar research profile badge and contact link.",
+      "files": [
+        "README.md"
+      ],
+      "scope": "file"
+    },
+    {
+      "ts": 1780125596,
+      "summary": "Reworked profile README into research-first founder profile using Arch\u00e9 publication and lab stats.",
+      "files": [
+        "README.md"
+      ],
+      "scope": "file"
+    }
+  ]
+}
