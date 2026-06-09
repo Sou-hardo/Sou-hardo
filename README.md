@@ -124,6 +124,4 @@ Software Engineering   full-stack apps, database systems, deployed projects
 
 <div align="center">
 
-### Research depth. Builder speed. Co-founder energy.
-
 </div>
