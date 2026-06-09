@@ -81,9 +81,9 @@ Software Engineering   full-stack apps, database systems, deployed projects
 
 </div>
 
-## Featured Projects
+<!-- ## Featured Projects
 
-<!-- | Project | Stack | What it shows |
+| Project | Stack | What it shows |
 | --- | --- | --- |
 | [Portfolio](https://github.com/Sou-hardo/portfolio) | TypeScript | Personal portfolio site, deployed on Vercel. |
 | [CVPR](https://github.com/Sou-hardo/CVPR) | Jupyter Notebook | Computer vision and pattern recognition coursework. |
