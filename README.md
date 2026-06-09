@@ -33,7 +33,7 @@ I work on **medical imaging**, **computer vision**, **explainable AI**, **federa
 
 ## Research Works
 
-### Journals & Preprints
+### Journals
 
 | Year | Work | Venue |
 | --- | --- | --- |
