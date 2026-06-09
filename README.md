@@ -6,7 +6,7 @@
 
 I work on **medical imaging**, **computer vision**, **explainable AI**, **federated learning** and production-grade software. My work spans peer-reviewed research, deployable systems and research leadership from Dhaka, Bangladesh.
 
-[![Arché Intelligence Lab](https://img.shields.io/static/v1?label=Arch%C3%A9+Intelligence+Lab&message=Co-founder+Member&color=C9A86A&style=for-the-badge)](https://www.arche-lab.org/)
+[![Arché Intelligence Lab](https://img.shields.io/static/v1?label=Arch%C3%A9+Intelligence+Lab&message=Co-founder&color=C9A86A&style=for-the-badge)](https://www.arche-lab.org/)
 [![Google Scholar](https://img.shields.io/badge/Google%20Scholar-research-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=pwYz93gAAAAJ&hl=en)
 [![Email](https://img.shields.io/badge/Email-souhardo02%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:souhardo02@gmail.com)
 
