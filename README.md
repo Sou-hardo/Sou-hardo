@@ -46,12 +46,12 @@ I work on **medical imaging**, **computer vision**, **explainable AI**, **federa
 
 | Year | Work | Venue |
 | --- | --- | --- |
-| 2025 | MIME: Multi-Strategy Imbalance Mitigation Engine for Skin Cancer Classification | 7th TCCE 2025 |
-| 2025 | Towards Decentralized Brain Tumor Classification Using Federated Learning with Explainable AI | 28th ICCIT 2025 |
-| 2025 | BUSegNet: Speckle-Aware Multi-Scale CNN with Noise Modeling for Breast Ultrasound Diagnosis | 28th ICCIT 2025 |
-| 2025 | VARENet: Variance-Aware Residual Enhancement Network for Microscopic Fungal Classification | IEEE ICBME 2025 |
-| 2025 | SSChNet: Self-Supervised Pre-trained Network for Child Speech Recognition | 2nd ICNGCIOT 2025 |
-| 2025 | VisionOcular: Transfer Learning with Self-Attention for Multi-Class Ocular Diagnosis | ICQPAI 2025 |
+| 2025 | [MIME: Multi-Strategy Imbalance Mitigation Engine for Skin Cancer Classification] | 7th TCCE 2025 |
+| 2025 | [Towards Decentralized Brain Tumor Classification Using Federated Learning with Explainable AI](https://ieeexplore.ieee.org/abstract/document/11490360) | 28th ICCIT 2025 |
+| 2025 | [BUSegNet: Speckle-Aware Multi-Scale CNN with Noise Modeling for Breast Ultrasound Diagnosis](https://ieeexplore.ieee.org/abstract/document/11491069) | 28th ICCIT 2025 |
+| 2025 | [VARENet: Variance-Aware Residual Enhancement Network for Microscopic Fungal Classification](https://ieeexplore.ieee.org/document/11504042) | IEEE ICBME 2025 |
+| 2025 | [SSChNet: Self-Supervised Pre-trained Network for Child Speech Recognition](https://ieeexplore.ieee.org/document/11160221) | 2nd ICNGCIOT 2025 |
+| 2025 | [VisionOcular: Transfer Learning with Self-Attention for Multi-Class Ocular Diagnosis](https://ieeexplore.ieee.org/document/11171736) | ICQPAI 2025 |
 
 
 ## Specialties
