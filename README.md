@@ -16,7 +16,7 @@ I work on **medical imaging**, **computer vision**, **explainable AI**, **federa
 
 ## Why I Stand Out
 
-- **Co-founder Member · Advisor at [Arché Intelligence Lab](https://www.arche-lab.org/)**, a student-led AI research group at AIUB working on trusted AI with collaborators across four countries.
+- **Co-founder · Advisor at [Arché Intelligence Lab](https://www.arche-lab.org/)**, a student-led AI research group at AIUB working on trusted AI with collaborators across four countries.
 - Specialized in **medical AI**, especially brain tumor MRI, ophthalmic imaging, fungal microscopy, breast ultrasound, federated learning and explainable diagnosis.
 - Strong applied engineering base: Web systems, databases and deployable applications.
 
