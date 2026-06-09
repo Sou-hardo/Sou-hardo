@@ -2,13 +2,12 @@
 
 # Souhardo Rahman
 
-### AI Researcher · Founder Member at Arché Intelligence Lab · Full-stack Builder
+### AI Researcher · Co-founder Member at Arché Intelligence Lab · Full-stack Builder
 
-I build at the intersection of **medical imaging**, **computer vision**, **explainable AI**, **federated learning**, **Bengali NLP**, and production-grade software. My work spans peer-reviewed research, deployable systems, and founder-level research leadership from Dhaka, Bangladesh.
+I build at the intersection of **medical imaging**, **computer vision**, **explainable AI**, **federated learning** and production-grade software. My work spans peer-reviewed research, deployable systems, and research leadership from Dhaka, Bangladesh.
 
-[![Arché Intelligence Lab](https://img.shields.io/badge/Arch%C3%A9%20Intelligence%20Lab-Founder%20Member-C9A86A?style=for-the-badge)](https://www.arche-lab.org/)
+[![Arché Intelligence Lab](https://img.shields.io/badge/Arch%C3%A9%20Intelligence%20Lab-Co-founder%20Member-C9A86A?style=for-the-badge)](https://www.arche-lab.org/)
 [![Google Scholar](https://img.shields.io/badge/Google%20Scholar-research-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=pwYz93gAAAAJ&hl=en)
-[![Portfolio](https://img.shields.io/badge/Portfolio-live-00C7B7?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-sou-hardo.vercel.app)
 [![Email](https://img.shields.io/badge/Email-souhardo02%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:souhardo02@gmail.com)
 
 </div>
@@ -17,24 +16,22 @@ I build at the intersection of **medical imaging**, **computer vision**, **expla
 
 ## Why I Stand Out
 
-- **Founder Member · Advisor at [Arché Intelligence Lab](https://www.arche-lab.org/)**, a student-led AI research group at AIUB working on trusted AI with collaborators across four continents.
+- **Co-founder Member · Advisor at [Arché Intelligence Lab](https://www.arche-lab.org/)**, a student-led AI research group at AIUB working on trusted AI with collaborators across four countries.
 - Research portfolio across **IEEE Access, Wiley Healthcare Technology Letters, Elsevier Biomedical Engineering Advances, MDPI, arXiv, Inderscience, IEEE conferences, ACM, Springer, and IEOM**.
 - Specialized in **medical AI**, especially brain tumor MRI, ophthalmic imaging, fungal microscopy, breast ultrasound, federated learning, and explainable diagnosis.
-- Strong applied engineering base: **TypeScript, Python, PHP, C#, C++, SQL/Oracle**, web systems, databases, and deployable portfolio-grade applications.
+- Strong applied engineering base: Web systems, databases and deployable applications.
 - Comfortable moving from research idea to paper, model, dataset, codebase, and public-facing product.
 
 ## Research Snapshot
 
-Data pulled from [arche-lab.org](https://www.arche-lab.org/) and its publications/research pages.
-
 | Area | Signal |
 | --- | --- |
-| Publications | 7+ journal/preprint works and 17+ conference works |
+| Publications | 7+ journal works and 17+ conference works |
 | Venues | 9 publication venues across IEEE, Wiley, Elsevier, MDPI, arXiv, Inderscience, IEOM, ACM, Springer |
 | Research years | 2024-2026 |
 | Lab focus | Medical imaging, computer vision, explainable AI, NLP, federated learning, self-supervised learning |
 | Research network | 4 countries, 5+ institutions, 7 professor collaborators, 2 partner labs |
-| Role | Founder Member · Advisor, Arché Intelligence Lab |
+| Role | Co-founder Member · Advisor, Arché Intelligence Lab |
 
 ## Research Works
 
@@ -43,12 +40,9 @@ Data pulled from [arche-lab.org](https://www.arche-lab.org/) and its publication
 | Year | Work | Venue |
 | --- | --- | --- |
 | 2026 | [OpthaNet: Attention-Integrated Architecture for Multi-Class Ophthalmic Image Classification](https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/htl2.70067) | Wiley Healthcare Technology Letters |
-| 2026 | [MFIFL: Attention-Based Federated Learning for Microscopic Fungal Image Classification](https://ieeexplore.ieee.org/abstract/document/11428189) | IEEE Access |
 | 2025 | [T3SSLNet: Triple Self-Supervised Learning for Brain Tumor MRI Classification](https://ieeexplore.ieee.org/abstract/document/11082144) | IEEE Access |
 | 2025 | [KbFL-XAI: Knowledge-based Federated Learning with Explainability for Eye Disease Diagnosis](https://www.sciencedirect.com/science/article/pii/S2667099225000520) | Elsevier Biomedical Engineering Advances |
-| 2025 | [State-of-the-Art Transformers for Bengali Text Summarization: A Comprehensive Review](https://www.mdpi.com/2504-2289/9/5/117) | MDPI Big Data and Cognitive Computing |
 | 2025 | [Ethic-BERT: Enhanced Deep Learning for Ethical and Non-Ethical Content Classification](https://arxiv.org/abs/2510.12850) | arXiv |
-| 2025 | [IoT-Integrated Energy-Efficient Monitoring and Preservation System for Perishable Crops](https://www.inderscienceonline.com/doi/abs/10.1504/IJES.2025.153292) | International Journal of Embedded Systems |
 
 ### Conferences
 
@@ -136,6 +130,6 @@ Software Engineering   full-stack apps, database systems, deployed portfolio pro
 
 <div align="center">
 
-### Research depth. Builder speed. Founder energy.
+### Research depth. Builder speed. Co-founder energy.
 
 </div>
