@@ -97,8 +97,8 @@ Software Engineering   full-stack apps, database systems, deployed projects
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.shion.dev/api?username=Sou-hardo&show_icons=true&theme=default&hide_border=true" alt="Souhardo's GitHub stats" />
-<img height="165" src="https://github-readme-stats.shion.dev/api/top-langs/?username=Sou-hardo&layout=compact&theme=default&hide_border=true" alt="Souhardo's top languages" />
+<img height="165" src="./profile/stats.svg" alt="Souhardo's GitHub stats" />
+<img height="165" src="./profile/top-langs.svg" alt="Souhardo's top languages" />
 
 <br />
 
