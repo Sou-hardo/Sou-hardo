@@ -2,7 +2,7 @@
 
 # Souhardo Rahman
 
-### AI Researcher · Co-founder of Arché Intelligence Lab · Full-stack Builder
+### AI Researcher · Co-founder of Arché Intelligence Lab · Full-stack Dev
 
 I work on **medical imaging**, **computer vision**, **explainable AI**, **federated learning** and production-grade software. My work spans peer-reviewed research, deployable systems and research leadership from Dhaka, Bangladesh.
 
