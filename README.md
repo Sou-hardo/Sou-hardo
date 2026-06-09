@@ -97,11 +97,6 @@ Software Engineering   full-stack apps, database systems, deployed projects
 
 <div align="center">
 
-<img height="165" src="./profile/stats.svg" alt="Souhardo's GitHub stats" />
-<img height="165" src="./profile/top-langs.svg" alt="Souhardo's top languages" />
-
-<br />
-
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
@@ -112,6 +107,11 @@ Software Engineering   full-stack apps, database systems, deployed projects
     src="https://raw.githubusercontent.com/Sou-hardo/github-readme/main/output/contribs-light.svg"
   />
 </picture>
+
+<br />
+
+<img height="165" src="./profile/stats.svg" alt="Souhardo's GitHub stats" />
+<img height="165" src="./profile/top-langs.svg" alt="Souhardo's top languages" />
 
 </div>
 
