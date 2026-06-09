@@ -4,7 +4,7 @@
 
 ### AI Researcher · Co-founder of Arché Intelligence Lab · Full-stack Builder
 
-I build at the intersection of **medical imaging**, **computer vision**, **explainable AI**, **federated learning** and production-grade software. My work spans peer-reviewed research, deployable systems, and research leadership from Dhaka, Bangladesh.
+I work on **medical imaging**, **computer vision**, **explainable AI**, **federated learning** and production-grade software. My work spans peer-reviewed research, deployable systems and research leadership from Dhaka, Bangladesh.
 
 [![Arché Intelligence Lab](https://img.shields.io/badge/Arch%C3%A9%20Intelligence%20Lab-Co-founder%20Member-C9A86A?style=for-the-badge)](https://www.arche-lab.org/)
 [![Google Scholar](https://img.shields.io/badge/Google%20Scholar-research-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=pwYz93gAAAAJ&hl=en)
@@ -17,10 +17,10 @@ I build at the intersection of **medical imaging**, **computer vision**, **expla
 ## Why I Stand Out
 
 - **Co-founder Member · Advisor at [Arché Intelligence Lab](https://www.arche-lab.org/)**, a student-led AI research group at AIUB working on trusted AI with collaborators across four countries.
-- Research portfolio across **IEEE Access, Wiley Healthcare Technology Letters, Elsevier Biomedical Engineering Advances, MDPI, arXiv, Inderscience, IEEE conferences, ACM, Springer, and IEOM**.
-- Specialized in **medical AI**, especially brain tumor MRI, ophthalmic imaging, fungal microscopy, breast ultrasound, federated learning, and explainable diagnosis.
+- Research portfolio across **IEEE Access, Wiley Healthcare Technology Letters, Elsevier Biomedical Engineering Advances, MDPI, arXiv, Inderscience, IEEE conferences, ACM, Springer and IEOM**.
+- Specialized in **medical AI**, especially brain tumor MRI, ophthalmic imaging, fungal microscopy, breast ultrasound, federated learning and explainable diagnosis.
 - Strong applied engineering base: Web systems, databases and deployable applications.
-- Comfortable moving from research idea to paper, model, dataset, codebase, and public-facing product.
+- Comfortable moving from research idea to paper, model, dataset, codebase and public-facing product.
 
 ## Research Snapshot
 
@@ -91,7 +91,7 @@ Software Engineering   full-stack apps, database systems, deployed projects
 | [WebTech Project](https://github.com/Sou-hardo/WebTech-Project) | PHP | Full-stack web technology project. |
 | [Book Shop Webtech](https://github.com/Sou-hardo/Book-Shop-Webtech) | PHP | Book shop web application project. |
 | [Pharmacy .NET Application](https://github.com/Sou-hardo/Pharmacy-.NET-Application) | C# | Pharmacy management application built with .NET. |
-| [Oracle Database Project](https://github.com/Sou-hardo/Oracle-Database-Project) | Oracle DB | Online bookstore database with customers, books, orders, payments, authors, and genres. | -->
+| [Oracle Database Project](https://github.com/Sou-hardo/Oracle-Database-Project) | Oracle DB | Online bookstore database with customers, books, orders, payments, authors and genres. | -->
 
 ## GitHub Snapshot
 
