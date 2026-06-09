@@ -2,7 +2,7 @@
 
 # Souhardo Rahman
 
-### AI Researcher · Co-founder Member at Arché Intelligence Lab · Full-stack Builder
+### AI Researcher · Co-founder of Arché Intelligence Lab · Full-stack Builder
 
 I build at the intersection of **medical imaging**, **computer vision**, **explainable AI**, **federated learning** and production-grade software. My work spans peer-reviewed research, deployable systems, and research leadership from Dhaka, Bangladesh.
 
@@ -58,12 +58,11 @@ I build at the intersection of **medical imaging**, **computer vision**, **expla
 ## Specialties
 
 ```txt
-Medical Imaging        MRI, ophthalmic imaging, breast ultrasound, fungal microscopy
+Medical Imaging        Brain MRI, ophthalmic imaging, breast ultrasound, fungal microscopy
 Trustworthy AI         XAI, federated learning, privacy-aware diagnosis
 Computer Vision        CNNs, attention, transformers, graph-aware architectures
 Self-supervised AI     contrastive learning, pretraining, representation learning
-Bengali NLP            summarization, ethics classification, low-resource language AI
-Software Engineering   full-stack apps, database systems, deployed portfolio projects
+Software Engineering   full-stack apps, database systems, deployed projects
 ```
 
 ## Tech Stack
@@ -78,32 +77,28 @@ Software Engineering   full-stack apps, database systems, deployed portfolio pro
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
 
 </div>
 
-## Featured Code Work
+## Featured Projects
 
-| Project | Stack | What it shows |
+<!-- | Project | Stack | What it shows |
 | --- | --- | --- |
 | [Portfolio](https://github.com/Sou-hardo/portfolio) | TypeScript | Personal portfolio site, deployed on Vercel. |
 | [CVPR](https://github.com/Sou-hardo/CVPR) | Jupyter Notebook | Computer vision and pattern recognition coursework. |
 | [WebTech Project](https://github.com/Sou-hardo/WebTech-Project) | PHP | Full-stack web technology project. |
 | [Book Shop Webtech](https://github.com/Sou-hardo/Book-Shop-Webtech) | PHP | Book shop web application project. |
 | [Pharmacy .NET Application](https://github.com/Sou-hardo/Pharmacy-.NET-Application) | C# | Pharmacy management application built with .NET. |
-| [Oracle Database Project](https://github.com/Sou-hardo/Oracle-Database-Project) | Oracle DB | Online bookstore database with customers, books, orders, payments, authors, and genres. |
+| [Oracle Database Project](https://github.com/Sou-hardo/Oracle-Database-Project) | Oracle DB | Online bookstore database with customers, books, orders, payments, authors, and genres. | -->
 
 ## GitHub Snapshot
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Sou-hardo&show_icons=true&theme=tokyonight&hide_border=true" alt="Souhardo's GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sou-hardo&layout=compact&theme=tokyonight&hide_border=true" alt="Souhardo's top languages" />
+<img height="165" src="https://github-readme-stats.shion.dev/api?username=Sou-hardo&show_icons=true&theme=tokyonight&hide_border=true" alt="Souhardo's GitHub stats" />
+<img height="165" src="https://github-readme-stats.shion.dev/api/top-langs/?username=Sou-hardo&layout=compact&theme=tokyonight&hide_border=true" alt="Souhardo's top languages" />
 
 <br />
 
@@ -124,7 +119,6 @@ Software Engineering   full-stack apps, database systems, deployed portfolio pro
 
 - Research Lab: [arche-lab.org](https://www.arche-lab.org/)
 - Google Scholar: [Souhardo Rahman](https://scholar.google.com/citations?user=pwYz93gAAAAJ&hl=en)
-- Portfolio: [portfolio-sou-hardo.vercel.app](https://portfolio-sou-hardo.vercel.app)
 - GitHub: [github.com/Sou-hardo](https://github.com/Sou-hardo)
 - Email: [souhardo02@gmail.com](mailto:souhardo02@gmail.com)
 
