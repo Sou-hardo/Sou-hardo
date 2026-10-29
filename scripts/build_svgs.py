@@ -196,7 +196,11 @@ def role(company, title, dates, bullets, url):
     return svg(w, h, "".join(body), f"{title} at {company}")
 
 
-def project(name, tag, desc, stack, meta, motif):
+def icon_uri(name):
+    return "data:image/svg+xml;base64," + __import__("base64").b64encode((OUT / f"icon-{name}.svg").read_bytes()).decode()
+
+
+def project(name, tag, desc, stack, meta, motif, icon):
     w = 590
     p, end = para(32, 118, desc, size=19, width=w - 190, lh=1.45)
     h = 290  # fixed so cards in a row line up
@@ -204,7 +208,8 @@ def project(name, tag, desc, stack, meta, motif):
         
         motif
         + label(32, 44, tag)
-        + f'<text class="s" x="32" y="84" font-size="30" font-weight="700" fill="{FG}">{t(name)}</text>'
+        + f'<image class="f" href="{icon_uri(icon)}" x="32" y="58" width="34" height="34"/>'
+        + f'<text class="s" x="76" y="84" font-size="30" font-weight="700" fill="{FG}">{t(name)}</text>'
         + p
         + f'<line class="w" style="animation-delay:.3s" x1="32" y1="{h - 58}" x2="{w - 32}" y2="{h - 58}" stroke="{LINE}"/>'
         + f'<text class="m" x="32" y="{h - 24}" font-size="15" fill="{MUTED}">{t(stack)}</text>'
@@ -630,22 +635,22 @@ def main():
         "project-veritas.svg": project(
             "Veritas", "Ledgercross · Identity",
             "KYC-as-a-service: document OCR, face match with liveness, operator dashboard and webhooks on serverless GCP.",
-            "FastAPI · InsightFace · Cloud Run · Postgres", "private", motif_idcard(),
+            "FastAPI · InsightFace · Cloud Run · Postgres", "private", motif_idcard(), "ledgercross",
         ),
         "project-apron.svg": project(
             "APRON", "Ledgercross · Procurement",
             "AI procurement negotiator with an evidence-backed ledger of quotes, contracts and savings. Humans approve high-impact moves.",
-            "Python · React · Postgres RLS · Doppler", "private", motif_negotiate(),
+            "Python · React · Postgres RLS · Doppler", "private", motif_negotiate(), "ledgercross",
         ),
         "project-keptcash.svg": project(
             "Keptcash", "Ledgercross · Receivables",
             "The AI accounts-receivable employee: finds why each invoice is unpaid, drafts the email, tracks promises, reports dollars recovered.",
-            "FastAPI · Next.js · QuickBooks · Gmail", "private", motif_invoice(),
+            "FastAPI · Next.js · QuickBooks · Gmail", "private", motif_invoice(), "ledgercross",
         ),
         "project-wifirank.svg": project(
             "WifiRank", "Personal · Live",
             "Crowdsourced speed tests and reviews for Dhaka ISPs, run on a live map and ranked per neighbourhood.",
-            "Astro · React · Neon · MapLibre", "wifirank.site", motif_signal(),
+            "Astro · React · Neon · MapLibre", "wifirank.site", motif_signal(), "wifirank",
         ),
     }
     act = activity_data()
