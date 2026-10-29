@@ -105,7 +105,7 @@ def para(x, y, text, size=15, width=500, fill=MUTED, lh=1.5, cls="s", delay=0):
 
 
 def label(x, y, text, fill=MUTED, anchor="start"):
-    return f'<text class="m" x="{x}" y="{y}" font-size="11" letter-spacing="1.2" fill="{fill}" text-anchor="{anchor}">{t(text.upper())}</text>'
+    return f'<text class="m" x="{x}" y="{y}" font-size="15" letter-spacing="1.4" fill="{fill}" text-anchor="{anchor}">{t(text.upper())}</text>'
 
 
 def square(x, y, fill=MUTED, s=5):
@@ -116,10 +116,10 @@ def square(x, y, fill=MUTED, s=5):
 
 
 def header():
-    w, h = 1200, 390
-    cx, cy = 930, 185  # mascot centre; the dot wave radiates from here
+    w, h = 1200, 450
+    cx, cy = 930, 210  # mascot centre; the dot wave radiates from here
     dots = []
-    for r in range(12):
+    for r in range(14):
         for c in range(24):
             x, y = 690 + c * 20, 40 + r * 26
             d = ((x - cx) ** 2 + (y - cy) ** 2) ** .5
@@ -136,14 +136,14 @@ def header():
     ]
     rows = []
     for i, (role, org) in enumerate(roles):
-        y = 254 + i * 28
+        y = 268 + i * 36
         rows.append(
-            f'<g class="f" style="animation-delay:{1.3 + i * .14:.2f}s">{square(64, y - 9, ACCENT if i == 0 else MUTED)}'
-            f'<text class="s" x="82" y="{y}" font-size="15" fill="{FG}">{t(role)}'
+            f'<g class="f" style="animation-delay:{1.3 + i * .14:.2f}s">{square(64, y - 11, ACCENT if i == 0 else MUTED, 7)}'
+            f'<text class="s" x="84" y="{y}" font-size="21" fill="{FG}">{t(role)}'
             f'<tspan fill="{MUTED}">  ·  {t(org)}</tspan></text></g>'
         )
     tagline = "AI researcher and AI engineer."
-    tw = len(tagline) * 20 * .455
+    tw = len(tagline) * 26 * .455
     body = (
         sheen(w, h, 3)
         + f'<g>{"".join(dots)}</g>'
@@ -152,67 +152,76 @@ def header():
         + mascot(cx - 80, cy - 86, 160)
         + f'<g class="f">{label(64, 74, "Dhaka, Bangladesh")}</g>'
         + f'<defs><clipPath id="nm"><rect class="w" style="animation-delay:.15s" x="56" y="90" width="430" height="80"/></clipPath>'
-        f'<clipPath id="tg"><rect class="w" style="animation-delay:.8s;animation-timing-function:steps(30)" x="64" y="168" width="{tw + 6:.0f}" height="26"/></clipPath></defs>'
+        f'<clipPath id="tg"><rect class="w" style="animation-delay:.8s;animation-timing-function:steps(30)" x="64" y="164" width="{tw + 6:.0f}" height="34"/></clipPath></defs>'
         + f'<text class="s" clip-path="url(#nm)" x="60" y="150" font-size="64" font-weight="700" fill="{FG}" letter-spacing="-1.5">@sou-hardo</text>'
-        + f'<text class="s" clip-path="url(#tg)" x="64" y="188" font-size="20" fill="{MUTED}">{t(tagline)}</text>'
-        + f'<rect class="b" x="{68 + tw:.0f}" y="172" width="2" height="20" fill="{ACCENT}"/>'
-        + f'<line class="w" style="animation-delay:1.1s" x1="64" y1="218" x2="640" y2="218" stroke="{LINE}"/>'
+        + f'<text class="s" clip-path="url(#tg)" x="64" y="192" font-size="26" fill="{MUTED}">{t(tagline)}</text>'
+        + f'<rect class="b" x="{70 + tw:.0f}" y="170" width="2" height="26" fill="{ACCENT}"/>'
+        + f'<line class="w" style="animation-delay:1.1s" x1="64" y1="224" x2="640" y2="224" stroke="{LINE}"/>'
         + "".join(rows)
-        + f'<text class="m" x="1136" y="358" font-size="12" fill="{MUTED}" text-anchor="end">sou-hardo.com</text>'
+        + f'<text class="m" x="1136" y="416" font-size="16" fill="{MUTED}" text-anchor="end">sou-hardo.com</text>'
     )
     return svg(w, h, body, "Souhardo Rahman, @sou-hardo. AI researcher and AI engineer.")
 
 
 def stats():
-    w, h = 1200, 150
+    w, h = 1200, 170
     items = [("4.00", "CGPA at AIUB"), ("10", "Published research works"), ("33", "Citations · h-index 3"), ("24", "Lab publications at Arché")]
     col = (w - 64 * 2) / len(items)
     out = []
     for i, (num, cap) in enumerate(items):
         x = 64 + i * col
         if i:
-            out.append(f'<line x1="{x - 24:.0f}" y1="40" x2="{x - 24:.0f}" y2="110" stroke="{LINE}"/>')
+            out.append(f'<line x1="{x - 24:.0f}" y1="40" x2="{x - 24:.0f}" y2="120" stroke="{LINE}"/>')
         out.append(
             f'<g class="f" style="animation-delay:{i * .12:.2f}s">'
-            f'<text class="s" x="{x:.0f}" y="84" font-size="40" font-weight="700" fill="{FG}" letter-spacing="-1">{t(num)}</text>'
-            f'<text class="s" x="{x:.0f}" y="110" font-size="13" fill="{MUTED}">{t(cap)}</text></g>'
-            f'<line class="w" style="animation-delay:{.4 + i * .12:.2f}s" x1="{x:.0f}" y1="124" x2="{x + 28:.0f}" y2="124" stroke="{ACCENT}" stroke-width="2"/>'
+            f'<text class="s" x="{x:.0f}" y="84" font-size="48" font-weight="700" fill="{FG}" letter-spacing="-1">{t(num)}</text>'
+            f'<text class="s" x="{x:.0f}" y="114" font-size="18" fill="{MUTED}">{t(cap)}</text></g>'
+            f'<line class="w" style="animation-delay:{.4 + i * .12:.2f}s" x1="{x:.0f}" y1="134" x2="{x + 32:.0f}" y2="134" stroke="{ACCENT}" stroke-width="2"/>'
         )
     return svg(w, h, sheen(w, h, 2) + "".join(out), "4.00 CGPA, 10 published research works, 33 citations, 24 lab publications")
 
 
-def role(company, title, dates, bullets, url, h=320):
-    w = 590
+def role(company, title, dates, bullets, url):
+    w = 1200
     body = [
-        label(32, 44, dates),
-        f'<text class="s" x="32" y="80" font-size="24" font-weight="700" fill="{FG}">{t(company)}</text>',
-        f'<text class="s" x="32" y="104" font-size="14" fill="{MUTED}">{t(title)}</text>',
-        f'<line class="w" x1="32" y1="124" x2="{w - 32}" y2="124" stroke="{LINE}"/>',
-        f'<line class="w" style="animation-delay:.2s" x1="32" y1="124" x2="96" y2="124" stroke="{ACCENT}" stroke-width="2"/>',
+        label(48, 56, dates),
+        f'<text class="s" x="48" y="100" font-size="34" font-weight="700" fill="{FG}">{t(company)}</text>',
+        f'<text class="s" x="48" y="130" font-size="20" fill="{MUTED}">{t(title)}</text>',
+        f'<line class="w" x1="48" y1="156" x2="{w - 48}" y2="156" stroke="{LINE}"/>',
+        f'<line class="w" style="animation-delay:.2s" x1="48" y1="156" x2="128" y2="156" stroke="{ACCENT}" stroke-width="2"/>',
+        f'<text class="m" x="{w - 48}" y="56" font-size="17" fill="{ACCENT}" text-anchor="end">{t(url)} ↗</text>',
     ]
-    y = 152
+    y = 196
     for i, b in enumerate(bullets):
-        body.append(square(34, y - 9))
-        p, y = para(50, y, b, size=14, width=w - 90, fill=FG, lh=1.45, delay=.1 + i * .12)
+        head, _, rest = b.partition(": ")
+        if len(head) > 12:  # only short project names get the bold lead-in column
+            head, rest = b, ""
+        body.append(square(50, y - 12, ACCENT if rest else MUTED, 7))
+        if rest:  # "Project: what it is" gets a bold lead-in column
+            body.append(f'<text class="s f" style="animation-delay:{.1 + i * .1:.2f}s" x="70" y="{y}" font-size="20" font-weight="700" fill="{FG}">{t(head)}</text>')
+            p, y = para(200, y, rest, size=20, width=w - 260, fill=FG, lh=1.45, delay=.1 + i * .1)
+        else:
+            p, y = para(70, y, b, size=20, width=w - 130, fill=FG, lh=1.45, delay=.1 + i * .1)
         body.append(p)
-        y += 10
+        y += 14
+    h = int(y + 24)
     body.insert(0, sheen(w, h, 4))
-    body.append(f'<text class="m" x="{w - 32}" y="44" font-size="11" fill="{ACCENT}" text-anchor="end">{t(url)} ↗</text>')
     return svg(w, h, "".join(body), f"{title} at {company}")
 
 
 def project(name, tag, desc, stack, meta, motif):
-    w, h = 590, 230
-    p, _ = para(32, 104, desc, size=14, width=w - 200, lh=1.5)
+    w = 590
+    p, end = para(32, 118, desc, size=19, width=w - 190, lh=1.45)
+    h = 290  # fixed so cards in a row line up
     body = (
         sheen(w, h, 5)
         + motif
         + label(32, 44, tag)
-        + f'<text class="s" x="32" y="78" font-size="24" font-weight="700" fill="{FG}">{t(name)}</text>'
+        + f'<text class="s" x="32" y="84" font-size="30" font-weight="700" fill="{FG}">{t(name)}</text>'
         + p
-        + f'<line class="w" style="animation-delay:.3s" x1="32" y1="{h - 52}" x2="{w - 32}" y2="{h - 52}" stroke="{LINE}"/>'
-        + f'<text class="m" x="32" y="{h - 24}" font-size="11" fill="{MUTED}">{t(stack)}</text>'
-        + f'<text class="m" x="{w - 32}" y="{h - 24}" font-size="11" fill="{ACCENT}" text-anchor="end">{t(meta)}</text>'
+        + f'<line class="w" style="animation-delay:.3s" x1="32" y1="{h - 58}" x2="{w - 32}" y2="{h - 58}" stroke="{LINE}"/>'
+        + f'<text class="m" x="32" y="{h - 24}" font-size="15" fill="{MUTED}">{t(stack)}</text>'
+        + f'<text class="m" x="{w - 32}" y="{h - 24}" font-size="15" fill="{ACCENT}" text-anchor="end">{t(meta)}</text>'
     )
     return svg(w, h, body, f"{name}: {desc}")
 
@@ -236,7 +245,7 @@ def motif_negotiate():  # apron: supplier quote steps down toward the target pri
     d = "M" + " L".join(f"{436 + x} {40 + y}" for x, y in pts)
     return (
         f'<line x1="436" y1="96" x2="558" y2="96" stroke="{ACCENT}" stroke-dasharray="3 4"/>'
-        f'<text class="m" x="558" y="112" font-size="10" fill="{ACCENT}" text-anchor="end">TARGET</text>'
+        f'<text class="m" x="558" y="112" font-size="13" fill="{ACCENT}" text-anchor="end">TARGET</text>'
         f'<path class="dr" d="{d}" fill="none" stroke="{FG}" stroke-width="1.8"/>'
         f'<circle class="rp" cx="558" cy="90" r="5" fill="none" stroke="{ACCENT}"/><rect x="554" y="86" width="8" height="8" fill="{ACCENT}"/>'
     )
@@ -251,7 +260,7 @@ def motif_invoice():  # keptcash: an overdue invoice, the recovered bar fills up
         f'<rect x="12" y="40" width="72" height="6" fill="{LINE}"/>'
         f'<rect class="w" style="animation-delay:.6s;animation-duration:2.4s" x="12" y="40" width="72" height="6" fill="{ACCENT}"/>'
         f'<rect x="12" y="56" width="50" height="4" fill="{LINE}"/>'
-        f'<text class="m p" x="84" y="74" font-size="10" fill="{ACCENT}" text-anchor="end">KEPT</text></g>'
+        f'<text class="m p" x="84" y="74" font-size="13" fill="{ACCENT}" text-anchor="end">KEPT</text></g>'
     )
 
 
@@ -281,17 +290,17 @@ PUBS = [
 
 def publications():
     w = 1200
-    h = 70 + len(PUBS) * 44 + 30
+    h = 80 + len(PUBS) * 56 + 30
     body = [label(64, 50, "Selected research"), label(w - 64, 50, "33 citations · h-index 3", anchor="end")]
     for i, (yr, title, venue) in enumerate(PUBS):
-        y = 100 + i * 44
+        y = 112 + i * 56
         col = ACCENT if yr == "Review" else MUTED
         body.append(
             f'<g class="f" style="animation-delay:{i * .08:.2f}s">'
-            f'<text class="m" x="64" y="{y}" font-size="12" fill="{col}">{t(yr)}</text>'
-            f'<text class="s" x="150" y="{y}" font-size="16" fill="{FG}">{t(title)}</text>'
-            f'<text class="s" x="{w - 64}" y="{y}" font-size="14" fill="{MUTED}" text-anchor="end">{t(venue)}</text>'
-            f'<line class="w" style="animation-delay:{.2 + i * .08:.2f}s" x1="64" y1="{y + 18}" x2="{w - 64}" y2="{y + 18}" stroke="{LINE}"/></g>'
+            f'<text class="m" x="64" y="{y}" font-size="16" fill="{col}">{t(yr)}</text>'
+            f'<text class="s" x="160" y="{y}" font-size="20" fill="{FG}">{t(title)}</text>'
+            f'<text class="s" x="{w - 64}" y="{y}" font-size="18" fill="{MUTED}" text-anchor="end">{t(venue)}</text>'
+            f'<line class="w" style="animation-delay:{.2 + i * .08:.2f}s" x1="64" y1="{y + 24}" x2="{w - 64}" y2="{y + 24}" stroke="{LINE}"/></g>'
         )
     return svg(w, h, "".join(body), "Selected research publications")
 
@@ -302,8 +311,8 @@ def footer():
         f'<line class="w" x1="64" y1="132" x2="{w - 64}" y2="132" stroke="{LINE}"/>'
         + mascot(w / 2 - 44, 40, 88, shadow=False)
         + f'<g class="f" style="animation-delay:.4s">{label(64, 116, "Thanks for stopping by")}'
-        f'<text class="m" x="{w - 64}" y="116" font-size="12" fill="{ACCENT}" text-anchor="end">dev.souhardo@gmail.com</text></g>'
-        + f'<text class="m" x="{w / 2}" y="156" font-size="11" fill="{MUTED}" text-anchor="middle">sou-hardo.com</text>'
+        f'<text class="m" x="{w - 64}" y="116" font-size="17" fill="{ACCENT}" text-anchor="end">dev.souhardo@gmail.com</text></g>'
+        + f'<text class="m" x="{w / 2}" y="158" font-size="16" fill="{MUTED}" text-anchor="middle">sou-hardo.com</text>'
     )
     return svg(w, h, body, "Thanks for stopping by. sou-hardo.com")
 
@@ -367,55 +376,55 @@ def fmt_date(iso):
 
 
 def overview(a):
-    w, h = 590, 300
-    cx, cy, r = 128, 160, 70
+    w, h = 590, 330
+    cx, cy, r = 128, 170, 76
     circ = 2 * 3.14159 * r
     stats = [(f'{a["commits"]:,}', "Commits"), (str(a["prs"]), "Pull requests"), (str(a["issues"]), "Issues"), (str(a["followers"]), "Followers")]
     cells = []
     for i, (num, cap) in enumerate(stats):
-        x, y = 260 + (i % 2) * 160, 128 + (i // 2) * 74
+        x, y = 262 + (i % 2) * 160, 132 + (i // 2) * 80
         cells.append(
             f'<g class="f" style="animation-delay:{.3 + i * .1:.2f}s">'
-            f'<text class="s" x="{x}" y="{y}" font-size="30" font-weight="700" fill="{FG}" letter-spacing="-.5">{t(num)}</text>'
-            f'{label(x, y + 22, cap)}</g>'
+            f'<text class="s" x="{x}" y="{y}" font-size="36" font-weight="700" fill="{FG}" letter-spacing="-.5">{t(num)}</text>'
+            f'{label(x, y + 26, cap)}</g>'
         )
     body = (
         sheen(w, h, 2)
-        + f'<text class="s" x="32" y="46" font-size="15" font-weight="700" fill="{FG}">GitHub, last 12 months</text>'
+        + f'<text class="s" x="32" y="46" font-size="21" font-weight="700" fill="{FG}">GitHub, last 12 months</text>'
         + f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{SURFACE}" stroke-width="8"/>'
         + f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{ACCENT}" stroke-width="8" stroke-linecap="round" '
         f'transform="rotate(-90 {cx} {cy})" stroke-dasharray="{circ:.1f}" stroke-dashoffset="{circ:.1f}">'
         f'<animate attributeName="stroke-dashoffset" from="{circ:.1f}" to="{circ * .12:.1f}" dur="1.8s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".22 1 .36 1"/></circle>'
         + f'<circle class="p" cx="{cx}" cy="{cy - r}" r="3" fill="{FG}"/>'
         + f'<text class="s f" x="{cx}" y="{cy + 6}" font-size="30" font-weight="700" fill="{FG}" text-anchor="middle">{a["total"]:,}</text>'
-        + f'<text class="s" x="{cx}" y="{cy + 28}" font-size="12" fill="{MUTED}" text-anchor="middle">contributions</text>'
+        + f'<text class="s" x="{cx}" y="{cy + 30}" font-size="16" fill="{MUTED}" text-anchor="middle">contributions</text>'
         + "".join(cells)
         + f'<line class="w" x1="32" y1="{h - 46}" x2="{w - 32}" y2="{h - 46}" stroke="{LINE}"/>'
-        + label(32, h - 22, f'Streak {a["current"]} days · longest {a["longest"]} · best day {a["best"]}')
+        + label(32, h - 22, f'Streak {a["current"]}d · longest {a["longest"]}d · best day {a["best"]}')
     )
     return svg(w, h, body, f'{a["total"]} contributions in the last year')
 
 
 def languages(a):
-    w, h = 590, 300
+    w, h = 590, 330
     x0, bw = 32, w - 64
     bar, x = [], x0
     for i, (n, frac, col) in enumerate(a["langs"]):
         seg = bw * frac / sum(f for _, f, _ in a["langs"])
-        bar.append(f'<rect class="w" style="animation-delay:{.2 + i * .08:.2f}s" x="{x:.1f}" y="70" width="{max(seg - 2, 1):.1f}" height="8" fill="{col}"/>')
+        bar.append(f'<rect class="w" style="animation-delay:{.2 + i * .08:.2f}s" x="{x:.1f}" y="72" width="{max(seg - 2, 1):.1f}" height="10" fill="{col}"/>')
         x += seg
     rows = []
     for i, (n, frac, col) in enumerate(a["langs"]):
-        cx, y = x0 + (i % 2) * 270, 120 + (i // 2) * 38
+        cx, y = x0 + (i % 2) * 270, 130 + (i // 2) * 48
         rows.append(
-            f'<g class="f" style="animation-delay:{.4 + i * .06:.2f}s">{square(cx, y - 9, col, 8)}'
-            f'<text class="s" x="{cx + 18}" y="{y}" font-size="14" font-weight="700" fill="{FG}">{t(n)}</text>'
-            f'<text class="m" x="{cx + 250}" y="{y}" font-size="12" fill="{MUTED}" text-anchor="end">{frac * 100:.1f}%</text>'
+            f'<g class="f" style="animation-delay:{.4 + i * .06:.2f}s">{square(cx, y - 12, col, 10)}'
+            f'<text class="s" x="{cx + 20}" y="{y}" font-size="19" font-weight="700" fill="{FG}">{t(n)}</text>'
+            f'<text class="m" x="{cx + 250}" y="{y}" font-size="16" fill="{MUTED}" text-anchor="end">{frac * 100:.1f}%</text>'
             f'<line x1="{cx}" y1="{y + 12}" x2="{cx + 250}" y2="{y + 12}" stroke="{LINE}"/></g>'
         )
     body = (
         sheen(w, h, 3)
-        + f'<text class="s" x="32" y="46" font-size="15" font-weight="700" fill="{FG}">Languages across my repos</text>'
+        + f'<text class="s" x="32" y="46" font-size="21" font-weight="700" fill="{FG}">Languages across my repos</text>'
         + "".join(bar) + "".join(rows)
     )
     return svg(w, h, body, "Languages across repositories")
@@ -459,31 +468,31 @@ def contrib_iso(a):
     boxes = [(f'{a["total"]:,}', "Total"), (str(a["week"]), "This week"), (str(a["best"]), f'Best day · {fmt_date(a["best_date"])}')]
     stat = []
     for i, (num, cap) in enumerate(boxes):
-        x = 760 + i * 130
+        x = 730 + i * 140
         stat.append(
-            f'<g class="f" style="animation-delay:{.4 + i * .1:.2f}s"><text class="s" x="{x}" y="96" font-size="28" font-weight="700" fill="{ACCENT if i == 0 else FG}">{t(num)}</text>'
-            f'{label(x, 118, cap)}</g>'
+            f'<g class="f" style="animation-delay:{.4 + i * .1:.2f}s"><text class="s" x="{x}" y="98" font-size="36" font-weight="700" fill="{ACCENT if i == 0 else FG}">{t(num)}</text>'
+            f'{label(x, 124, cap)}</g>'
         )
     streak = (
-        f'<g class="f" style="animation-delay:1s"><text class="s" x="64" y="{h - 80}" font-size="28" font-weight="700" fill="{FG}">{a["longest"]}<tspan font-size="14" fill="{MUTED}"> days</tspan></text>'
-        f'{label(64, h - 58, "Longest streak")}'
-        f'<text class="s" x="200" y="{h - 80}" font-size="28" font-weight="700" fill="{FG}">{a["current"]}<tspan font-size="14" fill="{MUTED}"> days</tspan></text>'
-        f'{label(200, h - 58, "Current streak")}</g>'
+        f'<g class="f" style="animation-delay:1s"><text class="s" x="64" y="{h - 80}" font-size="36" font-weight="700" fill="{FG}">{a["longest"]}<tspan font-size="18" fill="{MUTED}"> days</tspan></text>'
+        f'{label(64, h - 54, "Longest streak")}'
+        f'<text class="s" x="240" y="{h - 80}" font-size="36" font-weight="700" fill="{FG}">{a["current"]}<tspan font-size="18" fill="{MUTED}"> days</tspan></text>'
+        f'{label(240, h - 54, "Current streak")}</g>'
     )
-    legend = "".join(f'<rect x="{1060 + i * 14}" y="{h - 40}" width="10" height="10" fill="{c}"/>' for i, c in enumerate(LEVELS))
+    legend = "".join(f'<rect x="{1036 + i * 16}" y="{h - 44}" width="12" height="12" fill="{c}"/>' for i, c in enumerate(LEVELS))
     body = (
         sheen(w, h, 4)
-        + f'<text class="s" x="64" y="56" font-size="15" font-weight="700" fill="{FG}">Contributions, last 12 months</text>'
-        + f'<line x1="740" y1="40" x2="740" y2="126" stroke="{LINE}"/>'
+        + f'<text class="s" x="64" y="56" font-size="21" font-weight="700" fill="{FG}">Contributions, last 12 months</text>'
+        + f'<line x1="706" y1="40" x2="706" y2="132" stroke="{LINE}"/>'
         + "".join(cells) + "".join(months) + "".join(stat) + streak
-        + label(1052, h - 31, "Less", anchor="end") + legend + label(1136, h - 31, "More")
+        + label(1026, h - 32, "Less", anchor="end") + legend + label(1136, h - 31, "More")
     )
     return svg(w, h, body, f'Isometric contribution chart, {a["total"]} contributions')
 
 
 def contrib_grid(a):
     """Flat year grid; the mascot strolls along the top edge, a light follows below."""
-    w, h = 1200, 250
+    w, h = 1200, 270
     days = a["days"]
     lvl = {"NONE": 0, "FIRST_QUARTILE": 1, "SECOND_QUARTILE": 2, "THIRD_QUARTILE": 3, "FOURTH_QUARTILE": 4}
     s, gap, ox, oy = 11, 3, 64, 112
@@ -500,13 +509,13 @@ def contrib_grid(a):
     tot = sum(v for _, v in mix) or 1
     mx = []
     for i, (n, v) in enumerate(mix):
-        y = 120 + i * 26
+        y = 124 + i * 34
         frac = v / tot
         mx.append(
-            f'<text class="s" x="{ox + gw + 48}" y="{y}" font-size="13" fill="{FG}">{t(n)}</text>'
-            f'<text class="m" x="{w - 64}" y="{y}" font-size="12" fill="{MUTED}" text-anchor="end">{frac * 100:.0f}%</text>'
-            f'<rect x="{ox + gw + 48}" y="{y + 7}" width="{w - 64 - ox - gw - 48}" height="3" fill="{SURFACE}"/>'
-            f'<rect class="w" style="animation-delay:{.5 + i * .1:.2f}s" x="{ox + gw + 48}" y="{y + 7}" width="{max((w - 64 - ox - gw - 48) * frac, 1):.1f}" height="3" fill="{ACCENT}"/>'
+            f'<text class="s" x="{ox + gw + 48}" y="{y}" font-size="18" fill="{FG}">{t(n)}</text>'
+            f'<text class="m" x="{w - 64}" y="{y}" font-size="16" fill="{MUTED}" text-anchor="end">{frac * 100:.0f}%</text>'
+            f'<rect x="{ox + gw + 48}" y="{y + 9}" width="{w - 64 - ox - gw - 48}" height="4" fill="{SURFACE}"/>'
+            f'<rect class="w" style="animation-delay:{.5 + i * .1:.2f}s" x="{ox + gw + 48}" y="{y + 9}" width="{max((w - 64 - ox - gw - 48) * frac, 1):.1f}" height="4" fill="{ACCENT}"/>'
         )
     walk = f'<animateTransform attributeName="transform" type="translate" values="0 0;{gw - 30} 0;0 0" keyTimes="0;.5;1" dur="26s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/>'
     flip = f'<animateTransform attributeName="transform" type="scale" values="1 1;1 1;-1 1;-1 1" keyTimes="0;.499;.5;1" dur="26s" repeatCount="indefinite" calcMode="discrete"/>'
@@ -516,8 +525,8 @@ def contrib_grid(a):
     )
     body = (
         sheen(w, h, 6)
-        + f'<text class="s" x="64" y="46" font-size="15" font-weight="700" fill="{FG}">Every day of the year</text>'
-        + f'<text class="s" x="{ox + gw + 48}" y="46" font-size="15" font-weight="700" fill="{FG}">Activity mix</text>'
+        + f'<text class="s" x="64" y="46" font-size="21" font-weight="700" fill="{FG}">Every day of the year</text>'
+        + f'<text class="s" x="{ox + gw + 48}" y="46" font-size="21" font-weight="700" fill="{FG}">Activity mix</text>'
         + "".join(cells) + cat + "".join(mx)
     )
     return svg(w, h, body, "Contribution grid with the mascot walking across it, and activity mix")
@@ -570,7 +579,7 @@ def recent_repos(limit=6):
 
 def now(rows):
     w = 1200
-    h = 70 + len(rows) * 52 + 24
+    h = 80 + len(rows) * 64 + 24
     stamp = datetime.now(timezone.utc).strftime("%d %b %Y")
     body = [
         f'<circle class="rp" cx="68" cy="44" r="4" fill="none" stroke="{ACCENT}"/><rect x="64" y="40" width="8" height="8" fill="{ACCENT}"/>',
@@ -578,18 +587,18 @@ def now(rows):
         label(w - 64, 49, f"updated {stamp}", anchor="end"),
     ]
     for i, (repo, date, lang, msg, private) in enumerate(rows):
-        y = 102 + i * 52
-        msg = msg if len(msg) <= 14 else msg[:12].rstrip() + "…"  # just a hint; private commit text stays private
+        y = 116 + i * 64
+        msg = msg[:20] + "-" * min(max(len(msg) - 20, 0), 8)  # first 20 chars; dashes hide the rest
         owner, name = repo.split("/")
-        owner = owner if len(owner) <= 14 else owner[:13] + "…"
+        owner = owner if len(owner) <= 12 else owner[:11] + "…"
         body.append(
             f'<g class="f" style="animation-delay:{i * .1:.2f}s">'
-            f'<text class="s" x="64" y="{y}" font-size="17" fill="{MUTED}">{t(owner)}/<tspan font-weight="700" fill="{FG}">{t(name)}</tspan></text>'
-            + (f'<text class="m" x="{72 + len(owner + name) * 9.6:.0f}" y="{y}" font-size="10" fill="{ACCENT}">PRIVATE</text>' if private else "")
+            f'<text class="s" x="64" y="{y}" font-size="22" fill="{MUTED}">{t(owner)}/<tspan font-weight="700" fill="{FG}">{t(name)}</tspan></text>'
+            + (f'<text class="m" x="{74 + len(owner + name) * 12.2:.0f}" y="{y}" font-size="13" fill="{ACCENT}">PRIVATE</text>' if private else "")
             + f''
-            f'<text class="m" x="600" y="{y}" font-size="12" fill="{MUTED}">{t(msg)}</text>'
-            f'<text class="m" x="{w - 64}" y="{y}" font-size="12" fill="{MUTED}" text-anchor="end">{t(f"{lang}  ·  {date}" if lang else date)}</text>'
-            f'<line class="w" style="animation-delay:{.2 + i * .1:.2f}s" x1="64" y1="{y + 22}" x2="{w - 64}" y2="{y + 22}" stroke="{LINE}"/></g>'
+            f'<text class="m" x="600" y="{y}" font-size="16" fill="{MUTED}">{t(msg)}</text>'
+            f'<text class="m" x="{w - 64}" y="{y}" font-size="16" fill="{MUTED}" text-anchor="end">{t(f"{lang}  ·  {date}" if lang else date)}</text>'
+            f'<line class="w" style="animation-delay:{.2 + i * .1:.2f}s" x1="64" y1="{y + 28}" x2="{w - 64}" y2="{y + 28}" stroke="{LINE}"/></g>'
         )
     return svg(w, h, "".join(body), "Recently pushed repositories")
 
@@ -610,7 +619,7 @@ def main():
                 "ACROA: contract risk agent with deterministic renewal math and a deny-by-default policy gate.",
                 "Keptcash: AI accounts-receivable employee that diagnoses unpaid invoices and drafts the follow-up.",
             ],
-            "ledgercross.com", h=400,
+            "ledgercross.com",
         ),
         "role-arche.svg": role(
             "Arché Intelligence Lab", "Co-founder & Operations Director", "May 2024 – Now",
@@ -620,7 +629,7 @@ def main():
                 "Mentor student researchers from first idea to peer-reviewed paper.",
                 "The lab has grown to 24 peer-reviewed publications across medical imaging, explainable AI and Bengali NLP.",
             ],
-            "archelab.org", h=400,
+            "archelab.org",
         ),
         "project-veritas.svg": project(
             "Veritas", "Ledgercross · Identity",

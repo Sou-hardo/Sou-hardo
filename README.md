@@ -12,16 +12,11 @@
 
 <img src="assets/stats.svg" width="100%" alt="4.00 CGPA, 10 published research works, 33 citations, 24 lab publications"/>
 
-## Now
-
 <a href="https://github.com/Sou-hardo?tab=repositories&sort=pushed"><img src="assets/now.svg" width="100%" alt="Recently pushed repositories"/></a>
 
-<p align="center">
-<a href="https://ledgercross.com"><img src="assets/role-ledgercross.svg" width="49%" alt="Software Developer (AI & DevOps) at Ledgercross"/></a>
-<a href="https://archelab.org"><img src="assets/role-arche.svg" width="49%" alt="Co-founder and Operations Director at Arché Intelligence Lab"/></a>
-</p>
+<a href="https://ledgercross.com"><img src="assets/role-ledgercross.svg" width="100%" alt="Software Developer (AI & DevOps) at Ledgercross"/></a>
 
-## Selected projects
+<a href="https://archelab.org"><img src="assets/role-arche.svg" width="100%" alt="Co-founder and Operations Director at Arché Intelligence Lab"/></a>
 
 <p align="center">
 <a href="https://ledgercross.com"><img src="assets/project-veritas.svg" width="49%" alt="Veritas"/></a>
@@ -30,11 +25,7 @@
 <a href="https://wifirank.site"><img src="assets/project-wifirank.svg" width="49%" alt="WifiRank"/></a>
 </p>
 
-## Research
-
 <a href="https://sou-hardo.com/publications"><img src="assets/publications.svg" width="100%" alt="Selected research publications"/></a>
-
-## Activity
 
 <p align="center">
 <img src="assets/activity-overview.svg" width="49%" alt="GitHub activity overview, last 12 months"/>
