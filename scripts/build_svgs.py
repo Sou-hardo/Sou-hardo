@@ -16,7 +16,7 @@ from pathlib import Path
 OUT = Path(__file__).resolve().parent.parent / "assets"
 USER = "Sou-hardo"
 
-BG, FG, MUTED, LINE, SURFACE, ACCENT = "#000000", "#ffffff", "#aaa59e", "#3b3936", "#242321", "#897aff"
+BG, FG, MUTED, LINE, SURFACE, ACCENT = "#0a0a0a", "#ffffff", "#aaa59e", "#3b3936", "#242321", "#897aff"
 SANS = "'Helvetica Neue',Helvetica,Arial,sans-serif"
 MONO = "'JetBrains Mono',ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace"
 
