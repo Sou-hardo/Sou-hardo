@@ -10,7 +10,7 @@
 
 </div>
 
-<img src="assets/stats.svg" width="100%" alt="4.00 CGPA, 10 published research works, 33 citations, 24 lab publications"/>
+<img src="assets/stats.svg" width="100%" alt="4.00 CGPA, 11 published research works, 34 citations, 24 lab publications"/>
 
 <a href="https://github.com/Sou-hardo?tab=repositories&sort=pushed"><img src="assets/now.svg" width="100%" alt="Recently pushed repositories"/></a>
 

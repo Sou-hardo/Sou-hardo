@@ -165,7 +165,7 @@ def header():
 
 def stats():
     w, h = 1200, 170
-    items = [("4.00", "CGPA at AIUB"), ("10", "Published research works"), ("33", "Citations · h-index 3"), ("24", "Lab publications at Arché")]
+    items = [("4.00", "CGPA at AIUB"), ("11", "Published research works"), ("34", "Citations · h-index 3"), ("24", "Lab publications at Arché")]
     col = (w - 64 * 2) / len(items)
     out = []
     for i, (num, cap) in enumerate(items):
@@ -178,7 +178,7 @@ def stats():
             f'<text class="s" x="{x:.0f}" y="114" font-size="18" fill="{MUTED}">{t(cap)}</text></g>'
             f'<line class="w" style="animation-delay:{.4 + i * .12:.2f}s" x1="{x:.0f}" y1="134" x2="{x + 32:.0f}" y2="134" stroke="{ACCENT}" stroke-width="2"/>'
         )
-    return svg(w, h, sheen(w, h, 2) + "".join(out), "4.00 CGPA, 10 published research works, 33 citations, 24 lab publications")
+    return svg(w, h, sheen(w, h, 2) + "".join(out), "4.00 CGPA, 11 published research works, 34 citations, 24 lab publications")
 
 
 def role(company, title, dates, bullets, url):
@@ -281,7 +281,7 @@ PUBS = [
     ("2026", "OpthaNet: attention-integrated ophthalmic image classification", "Wiley HTL"),
     ("2025", "T3SSLNet: triple self-supervised learning for brain tumor MRI", "IEEE Access"),
     ("2025", "KbFL-XAI: explainable federated learning for eye disease", "Elsevier BEA"),
-    ("2025", "MIME: imbalance mitigation engine for skin cancer", "TCCE · Springer"),
+    ("2025", "MIME: multi-strategy imbalance mitigation for skin cancer", "TCCE · Springer"),
     ("2025", "SSChNet: self-supervised network for child speech recognition", "IEEE NCIM"),
     ("2024", "Brain MRI ND-5 Dataset", "IEEE DataPort"),
     ("Review", "Hi-TGNet: hierarchical tumor guidance network (thesis)", "Sci. Reports"),
@@ -291,7 +291,7 @@ PUBS = [
 def publications():
     w = 1200
     h = 80 + len(PUBS) * 56 + 30
-    body = [label(64, 50, "Selected research"), label(w - 64, 50, "33 citations · h-index 3", anchor="end")]
+    body = [label(64, 50, "Selected research"), label(w - 64, 50, "34 citations · h-index 3", anchor="end")]
     for i, (yr, title, venue) in enumerate(PUBS):
         y = 112 + i * 56
         col = ACCENT if yr == "Review" else MUTED
