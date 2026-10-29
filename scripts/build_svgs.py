@@ -590,6 +590,15 @@ def now(rows):
     return svg(w, h, "".join(body), "Recently pushed repositories")
 
 
+def bust_cache():
+    """Version every image link so browsers and GitHub's image cache fetch fresh cards."""
+    import re
+    readme = OUT.parent / "README.md"
+    v = datetime.now(timezone.utc).strftime("%Y%m%d%H%M")
+    text = re.sub(r'(assets/[\w-]+\.svg)(\?v=\w+)?', rf"\1?v={v}", readme.read_text())
+    readme.write_text(text)
+
+
 def main():
     OUT.mkdir(exist_ok=True)
     cards = {
@@ -654,6 +663,7 @@ def main():
         cards["now.svg"] = now([("Sou-hardo/wifirank", "", "TypeScript", "set GH_TOKEN to load live data", False)])
     for name, content in cards.items():
         (OUT / name).write_text(content)
+    bust_cache()
     print("wrote", ", ".join(cards))
 
 
