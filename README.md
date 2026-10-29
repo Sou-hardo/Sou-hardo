@@ -21,7 +21,7 @@
 <p align="center">
 <a href="https://ledgercross.com"><img src="assets/project-veritas.svg" width="49%" alt="Veritas"/></a>
 <a href="https://ledgercross.com"><img src="assets/project-apron.svg" width="49%" alt="APRON"/></a>
-<a href="https://keptcash.com"><img src="assets/project-keptcash.svg" width="49%" alt="Keptcash"/></a>
+<a href="https://ledgercross.com"><img src="assets/project-keptcash.svg" width="49%" alt="Keptcash"/></a>
 <a href="https://wifirank.site"><img src="assets/project-wifirank.svg" width="49%" alt="WifiRank"/></a>
 </p>
 
