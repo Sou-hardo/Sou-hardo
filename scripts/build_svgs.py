@@ -631,7 +631,7 @@ def main():
         "project-keptcash.svg": project(
             "Keptcash", "Ledgercross · Receivables",
             "The AI accounts-receivable employee: finds why each invoice is unpaid, drafts the email, tracks promises, reports dollars recovered.",
-            "FastAPI · Next.js · QuickBooks · Gmail", "keptcash.com", motif_invoice(),
+            "FastAPI · Next.js · QuickBooks · Gmail", "private", motif_invoice(),
         ),
         "project-wifirank.svg": project(
             "WifiRank", "Personal · Live",
