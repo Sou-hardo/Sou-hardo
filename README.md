@@ -1,125 +1,48 @@
-<div align="center">
-
-# Souhardo Rahman
-
-### AI Researcher · Co-founder of Arché Intelligence Lab · Full-stack Dev
-
-I work on **medical imaging**, **computer vision**, **explainable AI**, **federated learning** and production-grade software. My work spans peer-reviewed research, deployable systems and research leadership from Dhaka, Bangladesh.
-
-[![Arché Intelligence Lab](https://img.shields.io/static/v1?label=Arch%C3%A9+Intelligence+Lab&message=Co-founder&color=C9A86A&style=for-the-badge)](https://www.arche-lab.org/)
-[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-research-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=pwYz93gAAAAJ&hl=en)
-[![Email](https://img.shields.io/badge/Email-souhardo02%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:souhardo02@gmail.com)
-
-</div>
-
----
-
-## Why I Stand Out
-
-- **Co-founder · Advisor at [Arché Intelligence Lab](https://www.arche-lab.org/)**, a student-led AI research group at AIUB working on trusted AI with collaborators across four countries.
-- Specialized in **medical AI**, especially brain tumor MRI, ophthalmic imaging, fungal microscopy, breast ultrasound, federated learning and explainable diagnosis.
-
-## Research Snapshot
-
-| Area | Signal |
-| --- | --- |
-| Publications | 7+ journal works and 17+ conference works |
-| Venues | 9 publication venues across IEEE, Wiley, Elsevier, MDPI, arXiv, Inderscience, IEOM, ACM, Springer |
-| Research years | 2024-2026 |
-| Lab focus | Medical imaging, computer vision, explainable AI, NLP, federated learning, self-supervised learning |
-| Research network | 4 countries, 5+ institutions, 7 professor collaborators, 2 partner labs |
-| Role | Co-founder Member · Advisor, Arché Intelligence Lab |
-
-## Research Works
-
-### Journals
-
-| Year | Work | Venue |
-| --- | --- | --- |
-| 2026 | [OpthaNet: Attention-Integrated Architecture for Multi-Class Ophthalmic Image Classification](https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/htl2.70067) | Wiley Healthcare Technology Letters |
-| 2025 | [T3SSLNet: Triple Self-Supervised Learning for Brain Tumor MRI Classification](https://ieeexplore.ieee.org/abstract/document/11082144) | IEEE Access |
-| 2025 | [KbFL-XAI: Knowledge-based Federated Learning with Explainability for Eye Disease Diagnosis](https://www.sciencedirect.com/science/article/pii/S2667099225000520) | Elsevier Biomedical Engineering Advances |
-| 2025 | [Ethic-BERT: Enhanced Deep Learning for Ethical and Non-Ethical Content Classification](https://arxiv.org/abs/2510.12850) | arXiv |
-
-### Conferences
-
-| Year | Work | Venue |
-| --- | --- | --- |
-| 2025 | [MIME: Multi-Strategy Imbalance Mitigation Engine for Skin Cancer Classification] | 7th TCCE 2025 |
-| 2025 | [Towards Decentralized Brain Tumor Classification Using Federated Learning with Explainable AI](https://ieeexplore.ieee.org/abstract/document/11490360) | 28th ICCIT 2025 |
-| 2025 | [BUSegNet: Speckle-Aware Multi-Scale CNN with Noise Modeling for Breast Ultrasound Diagnosis](https://ieeexplore.ieee.org/abstract/document/11491069) | 28th ICCIT 2025 |
-| 2025 | [VARENet: Variance-Aware Residual Enhancement Network for Microscopic Fungal Classification](https://ieeexplore.ieee.org/document/11504042) | IEEE ICBME 2025 |
-| 2025 | [SSChNet: Self-Supervised Pre-trained Network for Child Speech Recognition](https://ieeexplore.ieee.org/document/11160221) | 2nd ICNGCIOT 2025 |
-| 2025 | [VisionOcular: Transfer Learning with Self-Attention for Multi-Class Ocular Diagnosis](https://ieeexplore.ieee.org/document/11171736) | ICQPAI 2025 |
-
-
-## Specialties
-
-```txt
-Medical Imaging        Brain MRI, ophthalmic imaging, breast ultrasound, fungal microscopy
-Trustworthy AI         XAI, federated learning, privacy-aware diagnosis
-Computer Vision        CNNs, attention, transformers, graph-aware architectures
-Self-supervised AI     contrastive learning, pretraining, representation learning
-Software Engineering   full-stack apps, database systems, deployed projects
-```
-
-## Tech Stack
+<a href="https://sou-hardo.com"><img src="assets/header.svg" width="100%" alt="Souhardo Rahman, @sou-hardo. AI researcher and AI engineer."/></a>
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+<a href="https://sou-hardo.com"><img src="https://img.shields.io/badge/sou--hardo.com-000000?style=for-the-badge&logo=googlechrome&logoColor=white"/></a>
+<a href="https://scholar.google.com/citations?user=pwYz93gAAAAJ&hl=en"><img src="https://img.shields.io/badge/Scholar-000000?style=for-the-badge&logo=googlescholar&logoColor=white"/></a>
+<a href="https://www.linkedin.com/in/sou-hardo/"><img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="https://x.com/_souhardo"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/></a>
+<a href="mailto:dev.souhardo@gmail.com"><img src="https://img.shields.io/badge/Email-897aff?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 
 </div>
 
-<!-- ## Featured Projects
+<img src="assets/stats.svg" width="100%" alt="4.00 CGPA, 10 published research works, 33 citations, 24 lab publications"/>
 
-| Project | Stack | What it shows |
-| --- | --- | --- |
-| [Portfolio](https://github.com/Sou-hardo/portfolio) | TypeScript | Personal portfolio site, deployed on Vercel. |
-| [CVPR](https://github.com/Sou-hardo/CVPR) | Jupyter Notebook | Computer vision and pattern recognition coursework. |
-| [WebTech Project](https://github.com/Sou-hardo/WebTech-Project) | PHP | Full-stack web technology project. |
-| [Book Shop Webtech](https://github.com/Sou-hardo/Book-Shop-Webtech) | PHP | Book shop web application project. |
-| [Pharmacy .NET Application](https://github.com/Sou-hardo/Pharmacy-.NET-Application) | C# | Pharmacy management application built with .NET. |
-| [Oracle Database Project](https://github.com/Sou-hardo/Oracle-Database-Project) | Oracle DB | Online bookstore database with customers, books, orders, payments, authors and genres. | -->
+## Now
 
-## GitHub Snapshot
+<a href="https://github.com/Sou-hardo?tab=repositories&sort=pushed"><img src="assets/now.svg" width="100%" alt="Recently pushed repositories"/></a>
 
-<div align="center">
+<p align="center">
+<a href="https://ledgercross.com"><img src="assets/role-ledgercross.svg" width="49%" alt="Software Developer (AI & DevOps) at Ledgercross"/></a>
+<a href="https://archelab.org"><img src="assets/role-arche.svg" width="49%" alt="Co-founder and Operations Director at Arché Intelligence Lab"/></a>
+</p>
 
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/Sou-hardo/github-readme/main/output/contribs-dark.svg"
-  />
-  <img
-    alt="Isometric GitHub contribution chart"
-    src="https://raw.githubusercontent.com/Sou-hardo/github-readme/main/output/contribs-light.svg"
-  />
-</picture>
+## Selected projects
 
-<br />
+<p align="center">
+<a href="https://ledgercross.com"><img src="assets/project-veritas.svg" width="49%" alt="Veritas"/></a>
+<a href="https://ledgercross.com"><img src="assets/project-apron.svg" width="49%" alt="APRON"/></a>
+<a href="https://keptcash.com"><img src="assets/project-keptcash.svg" width="49%" alt="Keptcash"/></a>
+<a href="https://wifirank.site"><img src="assets/project-wifirank.svg" width="49%" alt="WifiRank"/></a>
+</p>
 
-<img height="165" src="https://raw.githubusercontent.com/Sou-hardo/Sou-hardo/main/profile/stats.svg" alt="GitHub stats" />
-<img height="165" src="https://raw.githubusercontent.com/Sou-hardo/Sou-hardo/main/profile/top-langs.svg" alt="Top languages" />
+## Research
 
-</div>
+<a href="https://sou-hardo.com/publications"><img src="assets/publications.svg" width="100%" alt="Selected research publications"/></a>
 
-## Connect
+## Activity
 
-- Research Lab: [arche-lab.org](https://www.arche-lab.org/)
-- Google Scholar: [Souhardo Rahman](https://scholar.google.com/citations?user=pwYz93gAAAAJ&hl=en)
-- GitHub: [github.com/Sou-hardo](https://github.com/Sou-hardo)
-- Email: [souhardo02@gmail.com](mailto:souhardo02@gmail.com)
+<p align="center">
+<img src="assets/activity-overview.svg" width="49%" alt="GitHub activity overview, last 12 months"/>
+<img src="assets/activity-languages.svg" width="49%" alt="Languages across my repositories"/>
+</p>
 
-<div align="center">
+<img src="assets/activity-iso.svg" width="100%" alt="Isometric contribution chart, last 12 months"/>
 
-</div>
+<img src="assets/activity-grid.svg" width="100%" alt="Contribution grid and activity mix"/>
+
+<a href="https://sou-hardo.com"><img src="assets/footer.svg" width="100%" alt="Thanks for stopping by. sou-hardo.com"/></a>
