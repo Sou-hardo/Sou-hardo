@@ -34,7 +34,6 @@ STYLE = f"""<style>
 @keyframes shadow{{0%,100%{{transform:scaleX(1);opacity:.5}}50%{{transform:scaleX(.78);opacity:.25}}}}
 @keyframes ripple{{from{{transform:scale(1);opacity:.7}}to{{transform:scale(3.2);opacity:0}}}}
 @keyframes wave{{0%,70%,100%{{opacity:.35;transform:scale(1)}}12%{{opacity:1;transform:scale(1.9)}}}}
-@keyframes sweep{{from{{transform:translateX(-300px)}}to{{transform:translateX(1500px)}}}}
 @keyframes grow{{from{{transform:scaleY(0)}}to{{transform:scaleY(1)}}}}
 @keyframes bob{{0%,100%{{transform:scaleY(1)}}50%{{transform:scaleY(.82)}}}}
 .f{{animation:fade 1s {EASE} both}}
@@ -46,7 +45,6 @@ STYLE = f"""<style>
 .sh{{transform-box:fill-box;transform-origin:center;animation:shadow 4.8s ease-in-out infinite}}
 .rp{{transform-box:fill-box;transform-origin:center;animation:ripple 2.4s {EASE} infinite}}
 .wv{{transform-box:fill-box;transform-origin:center;animation:wave 6s ease-in-out infinite}}
-.sw{{animation:sweep 9s linear infinite}}
 .g{{transform-box:fill-box;transform-origin:bottom;animation:grow 1.2s {EASE} both,bob 5s ease-in-out 1.4s infinite}}
 @media (prefers-reduced-motion:reduce){{*{{animation:none!important}}}}
 </style>"""
@@ -58,16 +56,6 @@ def mascot(x, y, size, shadow=True):
     """The site's cat favicon, floating, with a ground shadow that breathes opposite."""
     sh = f'<ellipse class="sh" cx="{x + size / 2}" cy="{y + size * .97}" rx="{size * .3}" ry="{size * .05}" fill="{ACCENT}" opacity=".4"/>' if shadow else ""
     return f'{sh}<g class="fl"><image href="{MASCOT}" x="{x}" y="{y}" width="{size}" height="{size}"/></g>'
-
-
-def sheen(w, h, delay=0):
-    """A faint light pass every few seconds, clipped to the card."""
-    return (
-        f'<defs><linearGradient id="sg" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/>'
-        f'<stop offset=".5" stop-color="#fff" stop-opacity=".045"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>'
-        f'<clipPath id="cc"><rect width="{w}" height="{h}" rx="14"/></clipPath></defs>'
-        f'<g clip-path="url(#cc)"><rect class="sw" style="animation-delay:{delay}s" x="0" y="0" width="260" height="{h}" fill="url(#sg)" transform="skewX(-18)"/></g>'
-    )
 
 
 def t(s):
@@ -145,8 +133,8 @@ def header():
     tagline = "AI researcher and AI engineer."
     tw = len(tagline) * 26 * .455
     body = (
-        sheen(w, h, 3)
-        + f'<g>{"".join(dots)}</g>'
+        
+        f'<g>{"".join(dots)}</g>'
         + f'<circle class="rp" cx="{cx}" cy="{cy}" r="46" fill="none" stroke="{ACCENT}" stroke-opacity=".5"/>'
         + f'<circle class="rp" style="animation-delay:1.2s" cx="{cx}" cy="{cy}" r="46" fill="none" stroke="{ACCENT}" stroke-opacity=".5"/>'
         + mascot(cx - 80, cy - 86, 160)
@@ -178,7 +166,7 @@ def stats():
             f'<text class="s" x="{x:.0f}" y="114" font-size="18" fill="{MUTED}">{t(cap)}</text></g>'
             f'<line class="w" style="animation-delay:{.4 + i * .12:.2f}s" x1="{x:.0f}" y1="134" x2="{x + 32:.0f}" y2="134" stroke="{ACCENT}" stroke-width="2"/>'
         )
-    return svg(w, h, sheen(w, h, 2) + "".join(out), "4.00 CGPA, 11 published research works, 34 citations, 24 lab publications")
+    return svg(w, h, "".join(out), "4.00 CGPA, 11 published research works, 34 citations, 24 lab publications")
 
 
 def role(company, title, dates, bullets, url):
@@ -205,7 +193,6 @@ def role(company, title, dates, bullets, url):
         body.append(p)
         y += 14
     h = int(y + 24)
-    body.insert(0, sheen(w, h, 4))
     return svg(w, h, "".join(body), f"{title} at {company}")
 
 
@@ -214,8 +201,8 @@ def project(name, tag, desc, stack, meta, motif):
     p, end = para(32, 118, desc, size=19, width=w - 190, lh=1.45)
     h = 290  # fixed so cards in a row line up
     body = (
-        sheen(w, h, 5)
-        + motif
+        
+        motif
         + label(32, 44, tag)
         + f'<text class="s" x="32" y="84" font-size="30" font-weight="700" fill="{FG}">{t(name)}</text>'
         + p
@@ -389,8 +376,8 @@ def overview(a):
             f'{label(x, y + 26, cap)}</g>'
         )
     body = (
-        sheen(w, h, 2)
-        + f'<text class="s" x="32" y="46" font-size="21" font-weight="700" fill="{FG}">GitHub, last 12 months</text>'
+        
+        f'<text class="s" x="32" y="46" font-size="21" font-weight="700" fill="{FG}">GitHub, last 12 months</text>'
         + f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{SURFACE}" stroke-width="8"/>'
         + f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{ACCENT}" stroke-width="8" stroke-linecap="round" '
         f'transform="rotate(-90 {cx} {cy})" stroke-dasharray="{circ:.1f}" stroke-dashoffset="{circ:.1f}">'
@@ -423,8 +410,8 @@ def languages(a):
             f'<line x1="{cx}" y1="{y + 12}" x2="{cx + 250}" y2="{y + 12}" stroke="{LINE}"/></g>'
         )
     body = (
-        sheen(w, h, 3)
-        + f'<text class="s" x="32" y="46" font-size="21" font-weight="700" fill="{FG}">Languages across my repos</text>'
+        
+        f'<text class="s" x="32" y="46" font-size="21" font-weight="700" fill="{FG}">Languages across my repos</text>'
         + "".join(bar) + "".join(rows)
     )
     return svg(w, h, body, "Languages across repositories")
@@ -481,8 +468,8 @@ def contrib_iso(a):
     )
     legend = "".join(f'<rect x="{1036 + i * 16}" y="{h - 44}" width="12" height="12" fill="{c}"/>' for i, c in enumerate(LEVELS))
     body = (
-        sheen(w, h, 4)
-        + f'<text class="s" x="64" y="56" font-size="21" font-weight="700" fill="{FG}">Contributions, last 12 months</text>'
+        
+        f'<text class="s" x="64" y="56" font-size="21" font-weight="700" fill="{FG}">Contributions, last 12 months</text>'
         + f'<line x1="706" y1="40" x2="706" y2="132" stroke="{LINE}"/>'
         + "".join(cells) + "".join(months) + "".join(stat) + streak
         + label(1026, h - 32, "Less", anchor="end") + legend + label(1136, h - 31, "More")
@@ -524,8 +511,8 @@ def contrib_grid(a):
         f'<g transform="translate({ox + 15} 0)"><g>{flip}<image href="{MASCOT}" x="-17" y="{oy - 40}" width="34" height="34"/></g></g></g>'
     )
     body = (
-        sheen(w, h, 6)
-        + f'<text class="s" x="64" y="46" font-size="21" font-weight="700" fill="{FG}">Every day of the year</text>'
+        
+        f'<text class="s" x="64" y="46" font-size="21" font-weight="700" fill="{FG}">Every day of the year</text>'
         + f'<text class="s" x="{ox + gw + 48}" y="46" font-size="21" font-weight="700" fill="{FG}">Activity mix</text>'
         + "".join(cells) + cat + "".join(mx)
     )
