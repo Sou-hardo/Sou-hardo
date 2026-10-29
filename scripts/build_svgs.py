@@ -202,14 +202,13 @@ def icon_uri(name):
 
 def project(name, tag, desc, stack, meta, motif, icon):
     w = 590
-    p, end = para(32, 118, desc, size=19, width=w - 190, lh=1.45)
-    h = 290  # fixed so cards in a row line up
+    p, end = para(32, 98, desc, size=19, width=w - 190, lh=1.45)
+    h = 266  # fixed so cards in a row line up
     body = (
         
         motif
-        + label(32, 44, tag)
-        + f'<image class="f" href="{icon_uri(icon)}" x="32" y="58" width="34" height="34"/>'
-        + f'<text class="s" x="76" y="84" font-size="30" font-weight="700" fill="{FG}">{t(name)}</text>'
+        + f'<image class="f" href="{icon_uri(icon)}" x="32" y="34" width="34" height="34"/>'
+        + f'<text class="s" x="76" y="60" font-size="30" font-weight="700" fill="{FG}">{t(name)}</text>'
         + p
         + f'<line class="w" style="animation-delay:.3s" x1="32" y1="{h - 58}" x2="{w - 32}" y2="{h - 58}" stroke="{LINE}"/>'
         + f'<text class="m" x="32" y="{h - 24}" font-size="15" fill="{MUTED}">{t(stack)}</text>'
