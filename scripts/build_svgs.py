@@ -281,8 +281,8 @@ PUBS = [
     ("2026", "OpthaNet: attention-integrated ophthalmic image classification", "Wiley HTL"),
     ("2025", "T3SSLNet: triple self-supervised learning for brain tumor MRI", "IEEE Access"),
     ("2025", "KbFL-XAI: explainable federated learning for eye disease", "Elsevier BEA"),
-    ("2025", "BUSegNet: speckle-aware CNN for breast ultrasound", "ICCIT"),
-    ("2025", "VARENet: variance-aware network for fungal microscopy", "IEEE ICBME"),
+    ("2025", "MIME: imbalance mitigation engine for skin cancer", "TCCE · Springer"),
+    ("2025", "SSChNet: self-supervised network for child speech recognition", "IEEE NCIM"),
     ("2024", "Brain MRI ND-5 Dataset", "IEEE DataPort"),
     ("Review", "Hi-TGNet: hierarchical tumor guidance network (thesis)", "Sci. Reports"),
 ]
