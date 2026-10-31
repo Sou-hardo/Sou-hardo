@@ -151,6 +151,28 @@ def header():
     return svg(w, h, body, "Souhardo Rahman, @sou-hardo. AI researcher and AI engineer.")
 
 
+def available():
+    w, h = 1200, 130
+    tracks = ["AI/ML engineering", "Full stack", "Research"]
+    pills, x = [], 64
+    for i, tr in enumerate(tracks):
+        pw = len(tr) * 17 * .56 + 36
+        pills.append(
+            f'<g class="f" style="animation-delay:{.3 + i * .12:.2f}s">'
+            f'<rect x="{x:.0f}" y="70" width="{pw:.0f}" height="36" rx="18" fill="none" stroke="{ACCENT}"/>'
+            f'<text class="s" x="{x + pw / 2:.0f}" y="94" font-size="17" fill="{FG}" text-anchor="middle">{t(tr)}</text></g>'
+        )
+        x += pw + 12
+    body = (
+        f'<circle cx="70" cy="45" r="5" fill="#3fb950"/><circle class="rp" cx="70" cy="45" r="5" fill="#3fb950"/>'
+        f'<g class="f"><text class="s" x="86" y="51" font-size="20" font-weight="700" fill="{FG}">Open to collaborations and hire</text></g>'
+        + "".join(pills)
+        + f'<g class="f" style="animation-delay:.6s"><text class="m" x="{w - 64}" y="51" font-size="17" fill="{ACCENT}" text-anchor="end">dev.souhardo@gmail.com</text>'
+        + label(w - 64, 94, "Email me", anchor="end") + '</g>'
+    )
+    return svg(w, h, body, "Open to collaborations and hire: AI/ML engineering, full stack, research")
+
+
 def stats():
     w, h = 1200, 170
     items = [("4.00", "CGPA at AIUB"), ("11", "Published research works"), ("34", "Citations · h-index 3"), ("13", "Co-authored papers at Arché")]
@@ -608,6 +630,7 @@ def main():
     cards = {
         "header.svg": header(),
         "stats.svg": stats(),
+        "available.svg": available(),
         "publications.svg": publications(),
         "footer.svg": footer(),
         "role-ledgercross.svg": role(
