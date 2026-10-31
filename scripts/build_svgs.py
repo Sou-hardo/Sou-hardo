@@ -153,7 +153,7 @@ def header():
 
 def stats():
     w, h = 1200, 170
-    items = [("4.00", "CGPA at AIUB"), ("11", "Published research works"), ("34", "Citations · h-index 3"), ("24", "Lab publications at Arché")]
+    items = [("4.00", "CGPA at AIUB"), ("11", "Published research works"), ("34", "Citations · h-index 3"), ("13", "Co-authored papers at Arché")]
     col = (w - 64 * 2) / len(items)
     out = []
     for i, (num, cap) in enumerate(items):
@@ -166,7 +166,7 @@ def stats():
             f'<text class="s" x="{x:.0f}" y="114" font-size="18" fill="{MUTED}">{t(cap)}</text></g>'
             f'<line class="w" style="animation-delay:{.4 + i * .12:.2f}s" x1="{x:.0f}" y1="134" x2="{x + 32:.0f}" y2="134" stroke="{ACCENT}" stroke-width="2"/>'
         )
-    return svg(w, h, "".join(out), "4.00 CGPA, 11 published research works, 34 citations, 24 lab publications")
+    return svg(w, h, "".join(out), "4.00 CGPA, 11 published research works, 34 citations, 13 co-authored papers at Arché")
 
 
 def role(company, title, dates, bullets, url):
@@ -627,7 +627,7 @@ def main():
                 "Co-founded a non-profit, student-led AI research lab with collaborators across four countries.",
                 "Supervise the Computer Vision & Medical-AI track: brain MRI, ophthalmic imaging, skin lesions, federated and explainable diagnosis.",
                 "Mentor student researchers from first idea to peer-reviewed paper.",
-                "The lab has grown to 24 peer-reviewed publications across medical imaging, explainable AI and Bengali NLP.",
+                "Assisted on 24 of the lab's peer-reviewed publications, 13 of which I co-authored, across medical imaging, explainable AI and Bengali NLP.",
             ],
             "archelab.org",
         ),
