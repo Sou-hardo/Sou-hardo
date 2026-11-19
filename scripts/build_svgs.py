@@ -117,7 +117,7 @@ def header():
             fill, size = (ACCENT, 3) if accent else (LINE, 2)
             dots.append(f'<rect class="wv" style="animation-delay:{d / 160:.2f}s" x="{x}" y="{y}" width="{size}" height="{size}" fill="{fill}"/>')
     roles = [
-        ("Software Developer, AI & DevOps", "Ledgercross"),
+        ("AI & DevOps Team Lead", "Ledgercross"),
         ("Co-founder & Operations Director", "Arché Intelligence Lab"),
         ("Advisor", "FrithX"),
         ("B.Sc. CSE, CGPA 4.00", "AIUB, Dhaka"),
@@ -175,7 +175,7 @@ def available():
 
 def stats():
     w, h = 1200, 170
-    items = [("4.00", "CGPA at AIUB"), ("11", "Published research works"), ("34", "Citations · h-index 3"), ("13", "Co-authored papers at Arché")]
+    items = [("4.00", "CGPA at AIUB"), ("12", "Published research works"), ("36", "Citations · h-index 3"), ("13", "Co-authored papers at Arché")]
     col = (w - 64 * 2) / len(items)
     out = []
     for i, (num, cap) in enumerate(items):
@@ -188,7 +188,7 @@ def stats():
             f'<text class="s" x="{x:.0f}" y="114" font-size="18" fill="{MUTED}">{t(cap)}</text></g>'
             f'<line class="w" style="animation-delay:{.4 + i * .12:.2f}s" x1="{x:.0f}" y1="134" x2="{x + 32:.0f}" y2="134" stroke="{ACCENT}" stroke-width="2"/>'
         )
-    return svg(w, h, "".join(out), "4.00 CGPA, 11 published research works, 34 citations, 13 co-authored papers at Arché")
+    return svg(w, h, "".join(out), "4.00 CGPA, 12 published research works, 36 citations, 13 co-authored papers at Arché")
 
 
 def role(company, title, dates, bullets, url):
@@ -304,7 +304,7 @@ PUBS = [
 def publications():
     w = 1200
     h = 80 + len(PUBS) * 56 + 30
-    body = [label(64, 50, "Selected research"), label(w - 64, 50, "34 citations · h-index 3", anchor="end")]
+    body = [label(64, 50, "Selected research"), label(w - 64, 50, "36 citations · h-index 3", anchor="end")]
     for i, (yr, title, venue) in enumerate(PUBS):
         y = 112 + i * 56
         col = ACCENT if yr == "Review" else MUTED
@@ -634,7 +634,7 @@ def main():
         "publications.svg": publications(),
         "footer.svg": footer(),
         "role-ledgercross.svg": role(
-            "Ledgercross", "Software Developer (AI & DevOps)", "Feb 2026 – Now",
+            "Ledgercross", "AI & DevOps Team Lead", "Feb 2026 – Now",
             [
                 "Veritas: KYC-as-a-service rebuilt on scale-to-zero GCP. Google OCR, InsightFace face match and liveness, hosted links and webhooks.",
                 "ODIN: real-time deepfake detection on YouTube, TikTok and X. MV3 extension, FastAPI orchestrator and Gemini agent on Cloud Run.",
