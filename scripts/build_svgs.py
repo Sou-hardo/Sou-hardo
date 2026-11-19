@@ -650,7 +650,7 @@ def main():
                 "Co-founded a non-profit, student-led AI research lab with collaborators across four countries.",
                 "Supervise the Computer Vision & Medical-AI track: brain MRI, ophthalmic imaging, skin lesions, federated and explainable diagnosis.",
                 "Mentor student researchers from first idea to peer-reviewed paper.",
-                "Assisted on 24 of the lab's peer-reviewed publications, 13 of which I co-authored, across medical imaging, explainable AI and Bengali NLP.",
+                "Assisted on 24 of the lab's peer-reviewed publications, 13 of which I co-authored, across computer vision in healthcare, explainable AI and Bengali NLP.",
             ],
             "archelab.org",
         ),

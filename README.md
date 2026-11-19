@@ -1,6 +1,6 @@
 <a href="https://sou-hardo.com"><img src="assets/header.svg?v=202611192049" width="100%" alt="Souhardo Rahman (@devsouhardo), AI researcher and AI engineer. sou-hardo.com"/></a>
 
-I'm **Souhardo Rahman** (@devsouhardo, also Sou-hardo), an AI researcher and AI engineer in Dhaka, Bangladesh. I lead the AI & DevOps team at [Ledgercross](https://ledgercross.com), co-founded [Arché Intelligence Lab](https://archelab.org), and graduated in Computer Science & Engineering from AIUB with a 4.00 CGPA. My research is deep learning for medical imaging: brain tumour MRI, eye disease, skin lesions and breast ultrasound, with self-supervised and federated learning.
+I'm **Souhardo Rahman** (@devsouhardo, also Sou-hardo), an AI researcher and AI engineer in Dhaka, Bangladesh. I lead the AI & DevOps team at [Ledgercross](https://ledgercross.com), co-founded [Arché Intelligence Lab](https://archelab.org), and graduated in Computer Science & Engineering from AIUB with a 4.00 CGPA. My research is computer vision in healthcare: brain tumour MRI, eye disease, skin lesions and breast ultrasound, with self-supervised and federated learning.
 
 **Website: [sou-hardo.com](https://sou-hardo.com)** · [About me](https://sou-hardo.com/about) · [Case studies](https://sou-hardo.com/projects) · [Publications](https://sou-hardo.com/publications) · [ORCID](https://orcid.org/0009-0007-3774-0116) · [Google Scholar](https://scholar.google.com/citations?user=pwYz93gAAAAJ&hl=en)
 
