@@ -14,7 +14,7 @@ from html import escape
 from pathlib import Path
 
 OUT = Path(__file__).resolve().parent.parent / "assets"
-USER = "Sou-hardo"
+USER = "devsouhardo"
 
 BG, FG, MUTED, LINE, SURFACE, ACCENT = "#0a0a0a", "#ffffff", "#aaa59e", "#3b3936", "#242321", "#897aff"
 SANS = "'Helvetica Neue',Helvetica,Arial,sans-serif"
@@ -687,7 +687,7 @@ def main():
     if rows:
         cards["now.svg"] = now(rows)
     elif not (OUT / "now.svg").exists():
-        cards["now.svg"] = now([("Sou-hardo/wifirank", "", "TypeScript", "set GH_TOKEN to load live data", False)])
+        cards["now.svg"] = now([("devsouhardo/wifirank", "", "TypeScript", "set GH_TOKEN to load live data", False)])
     for name, content in cards.items():
         (OUT / name).write_text(content)
     bust_cache()

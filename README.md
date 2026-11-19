@@ -18,7 +18,7 @@ I'm **Souhardo Rahman** (@devsouhardo, also Sou-hardo), an AI researcher and AI 
 
 <img src="assets/stats.svg?v=202611191948" width="100%" alt="4.00 CGPA, 12 published research works, 36 citations, 13 co-authored papers at Arché"/>
 
-<a href="https://github.com/Sou-hardo?tab=repositories&sort=pushed"><img src="assets/now.svg?v=202611191948" width="100%" alt="Recently pushed repositories"/></a>
+<a href="https://github.com/devsouhardo?tab=repositories&sort=pushed"><img src="assets/now.svg?v=202611191948" width="100%" alt="Recently pushed repositories"/></a>
 
 <a href="https://ledgercross.com"><img src="assets/role-ledgercross.svg?v=202611191948" width="100%" alt="AI & DevOps Team Lead at Ledgercross"/></a>
 
