@@ -1,4 +1,4 @@
-<a href="https://sou-hardo.com"><img src="assets/header.svg?v=202611201505" width="100%" alt="Souhardo Rahman (@devsouhardo), AI researcher and AI engineer. sou-hardo.com"/></a>
+<a href="https://sou-hardo.com"><img src="assets/header.svg?v=202611211425" width="100%" alt="Souhardo Rahman (@devsouhardo), AI researcher and AI engineer. sou-hardo.com"/></a>
 
 I'm **Souhardo Rahman** (@devsouhardo, also Sou-hardo), an AI researcher and AI engineer in Dhaka, Bangladesh. I lead the AI & DevOps team at [Ledgercross](https://ledgercross.com), co-founded [Arché Intelligence Lab](https://archelab.org), and graduated in Computer Science & Engineering from AIUB with a 4.00 CGPA. My research is computer vision in healthcare: brain tumour MRI, eye disease, skin lesions and breast ultrasound, with self-supervised and federated learning.
 
@@ -14,34 +14,34 @@ I'm **Souhardo Rahman** (@devsouhardo, also Sou-hardo), an AI researcher and AI 
 
 </div>
 
-<a href="mailto:dev.souhardo@gmail.com"><img src="assets/available.svg?v=202611201505" width="100%" alt="Open to collaborations and hire: AI/ML engineering, full stack, research"/></a>
+<a href="mailto:dev.souhardo@gmail.com"><img src="assets/available.svg?v=202611211425" width="100%" alt="Open to collaborations and hire: AI/ML engineering, full stack, research"/></a>
 
-<img src="assets/stats.svg?v=202611201505" width="100%" alt="4.00 CGPA, 12 published research works, 36 citations, 13 co-authored papers at Arché"/>
+<img src="assets/stats.svg?v=202611211425" width="100%" alt="4.00 CGPA, 12 published research works, 36 citations, 13 co-authored papers at Arché"/>
 
-<a href="https://github.com/devsouhardo?tab=repositories&sort=pushed"><img src="assets/now.svg?v=202611201505" width="100%" alt="Recently pushed repositories"/></a>
+<a href="https://github.com/devsouhardo?tab=repositories&sort=pushed"><img src="assets/now.svg?v=202611211425" width="100%" alt="Recently pushed repositories"/></a>
 
-<a href="https://ledgercross.com"><img src="assets/role-ledgercross.svg?v=202611201505" width="100%" alt="AI & DevOps Team Lead at Ledgercross"/></a>
+<a href="https://ledgercross.com"><img src="assets/role-ledgercross.svg?v=202611211425" width="100%" alt="AI & DevOps Team Lead at Ledgercross"/></a>
 
-<a href="https://archelab.org"><img src="assets/role-arche.svg?v=202611201505" width="100%" alt="Co-founder and Operations Director at Arché Intelligence Lab"/></a>
+<a href="https://archelab.org"><img src="assets/role-arche.svg?v=202611211425" width="100%" alt="Co-founder and Operations Director at Arché Intelligence Lab"/></a>
 
 <p align="center">
-<a href="https://ledgercross.com"><img src="assets/project-veritas.svg?v=202611201505" width="49%" alt="Veritas"/></a>
-<a href="https://ledgercross.com"><img src="assets/project-apron.svg?v=202611201505" width="49%" alt="APRON"/></a>
-<a href="https://ledgercross.com"><img src="assets/project-keptcash.svg?v=202611201505" width="49%" alt="Keptcash"/></a>
-<a href="https://wifirank.site"><img src="assets/project-wifirank.svg?v=202611201505" width="49%" alt="WifiRank"/></a>
+<a href="https://ledgercross.com"><img src="assets/project-veritas.svg?v=202611211425" width="49%" alt="Veritas"/></a>
+<a href="https://ledgercross.com"><img src="assets/project-apron.svg?v=202611211425" width="49%" alt="APRON"/></a>
+<a href="https://ledgercross.com"><img src="assets/project-keptcash.svg?v=202611211425" width="49%" alt="Keptcash"/></a>
+<a href="https://wifirank.site"><img src="assets/project-wifirank.svg?v=202611211425" width="49%" alt="WifiRank"/></a>
 </p>
 
-<a href="https://sou-hardo.com/publications"><img src="assets/publications.svg?v=202611201505" width="100%" alt="Selected research publications"/></a>
+<a href="https://sou-hardo.com/publications"><img src="assets/publications.svg?v=202611211425" width="100%" alt="Selected research publications"/></a>
 
 Selected papers: [T3SSLNet](https://sou-hardo.com/publications/t3sslnet) (IEEE Access, 2025) · [OpthaNet](https://sou-hardo.com/publications/opthanet) (Healthcare Technology Letters, 2026) · [KbFL-XAI](https://sou-hardo.com/publications/kbfl-xai) (Biomedical Engineering Advances, 2025) · [HybridMAE-Net](https://sou-hardo.com/publications/hybridmae-net) (IEEE Access, 2026) · [Brain MRI ND-5 Dataset](https://sou-hardo.com/publications/brain-mri-nd-5-dataset) (IEEE DataPort, 2024). [All publications →](https://sou-hardo.com/publications)
 
 <p align="center">
-<img src="assets/activity-overview.svg?v=202611201505" width="49%" alt="GitHub activity overview, last 12 months"/>
-<img src="assets/activity-languages.svg?v=202611201505" width="49%" alt="Languages across my repositories"/>
+<img src="assets/activity-overview.svg?v=202611211425" width="49%" alt="GitHub activity overview, last 12 months"/>
+<img src="assets/activity-languages.svg?v=202611211425" width="49%" alt="Languages across my repositories"/>
 </p>
 
-<img src="assets/activity-iso.svg?v=202611201505" width="100%" alt="Isometric contribution chart, last 12 months"/>
+<img src="assets/activity-iso.svg?v=202611211425" width="100%" alt="Isometric contribution chart, last 12 months"/>
 
-<img src="assets/activity-grid.svg?v=202611201505" width="100%" alt="Contribution grid and activity mix"/>
+<img src="assets/activity-grid.svg?v=202611211425" width="100%" alt="Contribution grid and activity mix"/>
 
-<a href="https://sou-hardo.com"><img src="assets/footer.svg?v=202611201505" width="100%" alt="Thanks for stopping by. sou-hardo.com"/></a>
+<a href="https://sou-hardo.com"><img src="assets/footer.svg?v=202611211425" width="100%" alt="Thanks for stopping by. sou-hardo.com"/></a>
